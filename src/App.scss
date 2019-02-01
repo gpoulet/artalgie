@@ -1,3 +1,8 @@
+$primary-color: white;
+$grey-blue: #37474f;
+$menu-text: $grey-blue;
+$menu-link: $grey-blue;
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +16,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+nav {
+  background-color: $primary-color;
+}
+
+nav .nav-wrapper>.brand-logo {
+  color: $menu-text;
+}
+
+nav .nav-wrapper>ul#nav-mobile>li>a {
+  color: $menu-text;
 }
