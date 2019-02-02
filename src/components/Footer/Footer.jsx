@@ -1,8 +1,9 @@
 import React from "react";
 import { ARTALGIE, PAGE_FACEBOOK, EMAIL, ROUTER, TELEPHONE } from '../../constants'
+import { Link } from 'react-router-dom'
 
 function LinkFooter({ routing, link }) {
-  return <li key={routing}><a className="grey-text text-lighten-3" href={routing}>{link}</a></li>
+  return <li key={routing}><Link className="grey-text text-lighten-3" to={routing}>{link}</Link></li>
 }
 
 function Footer() {
