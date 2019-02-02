@@ -8,6 +8,7 @@ import {
   Contact,
   Intervenante,
   LiensUtiles,
+  MentionsLegales,
   Precisions,
   Prestations,
   Error,
@@ -19,6 +20,7 @@ import {
   ROUTING_ERROR,
   ROUTING_INTERVENANTE,
   ROUTING_LIENS_UTILES,
+  ROUTING_MENTIONS_LEGALES,
   ROUTING_PRECISIONS,
   ROUTING_PRESTATIONS
 } from './constants'
@@ -36,6 +38,7 @@ function App() {
               <Route path={ROUTING_CONTACT} component={Contact}/>
               <Route path={ROUTING_INTERVENANTE} component={Intervenante}/>
               <Route path={ROUTING_LIENS_UTILES} component={LiensUtiles}/>
+              <Route path={ROUTING_MENTIONS_LEGALES} component={MentionsLegales}/>
               <Route path={ROUTING_PRECISIONS} component={Precisions}/>
               <Route path={ROUTING_PRESTATIONS} component={Prestations}/>
               <Route path={ROUTING_ERROR} component={Error}/>

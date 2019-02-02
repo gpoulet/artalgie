@@ -2,6 +2,7 @@ export const ROUTING_ACCUEIL = "/";
 export const ROUTING_CONTACT = "/contact";
 export const ROUTING_INTERVENANTE = "/intervenante";
 export const ROUTING_LIENS_UTILES = "/liens-utiles";
+export const ROUTING_MENTIONS_LEGALES = "/mentions-legales";
 export const ROUTING_PRECISIONS = "/precisions";
 export const ROUTING_PRESTATIONS = "/prestations";
 export const ROUTING_ERROR = "/erreur";
@@ -10,6 +11,7 @@ export const LINK_ACCUEIL = "Accueil";
 export const LINK_CONTACT = "Contact";
 export const LINK_INTERVENANTE = "L'intervenante";
 export const LINK_LIENS_UTILES = "Liens utiles";
+export const LINK_MENTIONS_LEGALES = "Mentions légales";
 export const LINK_PRECISIONS = "Précisions";
 export const LINK_PRESTATIONS = "Prestations";
 

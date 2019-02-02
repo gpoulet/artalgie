@@ -1,5 +1,13 @@
 import React from "react";
-import { ARTALGIE, PAGE_FACEBOOK, EMAIL, ROUTER, TELEPHONE } from '../../constants'
+import {
+  ARTALGIE,
+  PAGE_FACEBOOK,
+  EMAIL,
+  ROUTER,
+  TELEPHONE,
+  ROUTING_MENTIONS_LEGALES,
+  LINK_MENTIONS_LEGALES
+} from '../../constants'
 import { Link } from 'react-router-dom'
 import Logo from '../Header/Logo'
 
@@ -14,7 +22,7 @@ function Footer() {
         <div className="row">
           <div className="col l6 s12">
             <div className="brand-logo">
-            <Logo />
+              <Logo/>
             </div>
             <p className="footer-text">
               Téléphone : {TELEPHONE}<br/><br/>
@@ -33,7 +41,7 @@ function Footer() {
       <div className="footer-copyright">
         <div className="container footer-text">
           © 2019 {ARTALGIE}
-          <a className="footer-text right" href="#!">More Links</a>
+          <Link className="footer-text right" to={ROUTING_MENTIONS_LEGALES}>{LINK_MENTIONS_LEGALES}</Link>
         </div>
       </div>
     </footer>);
