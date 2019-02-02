@@ -6,9 +6,9 @@ $light-grey: #f1f1f1;
 $grey: #e0e0e0;
 $black: #000000;
 $blue: #0277bd;
-$yellow: #fbc02d;
+$yellow: #f9a825;
 $brown: #5d4037;
-$red: #cc3c56 ;
+$red: #e53935;
 
 $primary-color: $white;
 
@@ -21,6 +21,7 @@ $burger-menu-link-active-text: $blue;
 $footer: $primary-color;
 $footer-text: $blue-grey-dark;
 $logo-art-weight: 600;
+$logo-algie-weight: 400;
 $card-title: $yellow;
 $card-title-weight: 400;
 
@@ -61,6 +62,7 @@ code {
 
 .brand-logo > .algie {
   color: $logo-algie;
+  font-weight: $logo-algie-weight;
 }
 
 #root > div > div > nav {
