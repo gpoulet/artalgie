@@ -30,6 +30,9 @@ function Intervenante() {
               garantissant écoute, respect, non-jugement, confidentialité et déontologie (elle est bien entendu
               supervisée dans sa pratique).
             </p>
+
+            <img className="responsive-img center-align" src="/images/intervenante.jpg"/>
+
           </div>
         </div>
       </div>
