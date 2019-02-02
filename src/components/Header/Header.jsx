@@ -3,8 +3,8 @@ import { Link, NavLink } from 'react-router-dom'
 import { ARTALGIE, ROUTER, ROUTING_ACCUEIL } from '../../constants'
 import BurgerMenu from './BurgerMenu'
 
-function LinkHeader({ routing, link }) {
-  return <li key={routing}><NavLink to={routing} activeClassName="active" exact>{link}</NavLink></li>
+function LinkHeader({ routing, link, exact }) {
+  return <li key={routing}><NavLink to={routing} activeClassName="active" exact={exact}>{link}</NavLink></li>
 }
 
 function Header() {

@@ -14,7 +14,7 @@ export const LINK_PRECISIONS = "Précisions";
 export const LINK_PRESTATIONS = "Prestations";
 
 export const ROUTER = [
-  { routing: ROUTING_ACCUEIL, link: LINK_ACCUEIL, icon: "home" },
+  { routing: ROUTING_ACCUEIL, link: LINK_ACCUEIL, icon: "home", exact: true },
   { routing: ROUTING_PRECISIONS, link: LINK_PRECISIONS, icon:"palette" },
   { routing: ROUTING_PRESTATIONS, link: LINK_PRESTATIONS, icon: "business" },
   { routing: ROUTING_INTERVENANTE, link: LINK_INTERVENANTE, icon: "face" },

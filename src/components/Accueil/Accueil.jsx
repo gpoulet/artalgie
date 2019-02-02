@@ -7,7 +7,7 @@ function Accueil() {
     <Parallax
       min={'-20%'}
       max={'20%'}
-      image="images/background.jpg"
+      image="images/art-therapie.jpg"
     >
       <h1 className="white-text">{ARTALGIE}</h1>
     </Parallax>  </div>);

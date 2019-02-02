@@ -1,18 +1,19 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
-import M from "materialize-css";
+import M from "materialize-css/dist/js/materialize.min";
 import { ROUTER } from '../../constants'
 
-function LinkHBurgerMenu({ routing, link, icon }) {
-  return           <li><NavLink to={routing}><i className="material-icons">{icon}</i>{link}</NavLink></li>
+const LinkHBurgerMenu = ({ routing, link, icon, exact }) => {
+  return <li key={routing}><NavLink to={routing} exact={exact} className="sidenav-close"><i
+    className="material-icons">{icon}</i>{link}</NavLink></li>
 }
 
 class BurgerMenu extends Component {
 
   componentDidMount() {
     document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.sidenav');
-      this.menu = M.Sidenav.init(elems, {});
+      const elems = document.querySelectorAll('.sidenav');
+      this.menu = M.Sidenav.init(elems);
     });
   }
 
@@ -30,7 +31,7 @@ class BurgerMenu extends Component {
               <a href="#email"><span className="white-text email">jdandturk@gmail.com</span></a>
             </div>
           </li>
-              {ROUTER.map(LinkHBurgerMenu)}
+          {ROUTER.map(LinkHBurgerMenu)}
           <li>
             <div className="divider"></div>
           </li>
