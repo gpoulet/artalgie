@@ -22,6 +22,7 @@ import {
   ROUTING_PRECISIONS,
   ROUTING_PRESTATIONS
 } from './constants'
+import ParallaxProvider from 'react-scroll-parallax/lib/components/ParallaxProvider'
 
 function App() {
   return (
@@ -29,20 +30,23 @@ function App() {
       <div>
         <Header/>
         <ScrollToTop>
-          <Switch>
-            <Route path={ROUTING_ACCUEIL} exact component={Accueil}/>
-            <Route path={ROUTING_CONTACT} component={Contact}/>
-            <Route path={ROUTING_INTERVENANTE} component={Intervenante}/>
-            <Route path={ROUTING_LIENS_UTILES} component={LiensUtiles}/>
-            <Route path={ROUTING_PRECISIONS} component={Precisions}/>
-            <Route path={ROUTING_PRESTATIONS} component={Prestations}/>
-            <Route path={ROUTING_ERROR} component={Error}/>
-          </Switch>
+          <ParallaxProvider>
+            <Switch>
+              <Route path={ROUTING_ACCUEIL} exact component={Accueil}/>
+              <Route path={ROUTING_CONTACT} component={Contact}/>
+              <Route path={ROUTING_INTERVENANTE} component={Intervenante}/>
+              <Route path={ROUTING_LIENS_UTILES} component={LiensUtiles}/>
+              <Route path={ROUTING_PRECISIONS} component={Precisions}/>
+              <Route path={ROUTING_PRESTATIONS} component={Prestations}/>
+              <Route path={ROUTING_ERROR} component={Error}/>
+            </Switch>
+          </ParallaxProvider>
         </ScrollToTop>
         <Footer/>
       </div>
     </Router>
-  );
+  )
+    ;
 }
 
 export default App;

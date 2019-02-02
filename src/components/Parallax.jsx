@@ -1,50 +1,25 @@
-import React, { Component } from 'react';
-import { string } from 'prop-types'
-import * as $ from 'jquery'
-import M from 'materialize-css';
+import React from 'react';
+import { string, node, number } from 'prop-types';
+import Parallax from 'react-scroll-parallax/lib/components/Parallax';
 
-class Parallax extends Component {
-
-  componentDidMount() {
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.parallax');
-      var instances = M.Parallax.init(elems, {});
-    });
-  }
-
-  render() {
-    const { image, alt, title } = this.props
-    if (title) {
-      return (
-        <div className="parallax-container">
-          <div className="parallax valign-wrapper">
-            <img src={`images/${image}`} alt={alt}/>
-          </div>
-          <div className="valign">
-            <span className="white"><h1 className="center-align page-title parallax-title">{title}</h1></span>
-          </div>
-        </div>
-      );
-
-    }
-    else {
-      return (
-        <div className="parallax-container">
-          <div className="parallax valign-wrapper">
-            <img src={`images/${image}`} alt={alt}/>
-          </div>
-        </div>
-      );
-    }
-  }
-
+function HeroBanner({ image, min, max, children }) {
+  return (<div className="hero-container">
+      <Parallax offsetYMin={min} offsetYMax={max} slowerScrollRate>
+        <div
+          className="hero-image"
+          style={{ backgroundImage: `url(${image})` }}
+        />
+      </Parallax>
+      <div className="hero-children">{children}</div>
+    </div>
+  );
 }
 
-Parallax.propTypes = {
+HeroBanner.propTypes = {
   image: string.isRequired,
-  alt: string.isRequired,
-  title: string
+  min: string.isRequired,
+  max: string.isRequired,
+  children: node
 }
 
-export default Parallax;
+export default HeroBanner;

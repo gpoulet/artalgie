@@ -4,8 +4,13 @@ import { ARTALGIE } from '../../constants'
 
 function Accueil() {
   return (<div>
-    <Parallax image="background.jpg" alt={ARTALGIE} title={ARTALGIE}/>
-  </div>);
+    <Parallax
+      min={'-20%'}
+      max={'20%'}
+      image="images/background.jpg"
+    >
+      <h1 className="white-text">{ARTALGIE}</h1>
+    </Parallax>  </div>);
 }
 
 export default Accueil;
