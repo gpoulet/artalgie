@@ -9,9 +9,10 @@ function Contact() {
           <div className="card-content">
             <span className="card-title">{LINK_CONTACT}</span>
             <p>Téléphone : {TELEPHONE}
-            </p>p>
+            </p>
             <br/>
             <p>Adresse mail : {EMAIL}</p>
+            <br/>
             <p>Facebook : <a href={PAGE_FACEBOOK} target="_blank" rel="noopener noreferrer">{PAGE_FACEBOOK}</a></p>
           </div>
         </div>
