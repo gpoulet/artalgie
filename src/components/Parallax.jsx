@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, node, number } from 'prop-types';
+import { string, node } from 'prop-types';
 import Parallax from 'react-scroll-parallax/lib/components/Parallax';
 
 function HeroBanner({ image, min, max, children }) {
