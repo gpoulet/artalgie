@@ -13,10 +13,10 @@ function Header() {
     <div>
       <nav>
         <div className="nav-wrapper">
-          <a data-target="slide-out"
-            className="sidenav-trigger clickable">
+          <button data-target="slide-out"
+            className="sidenav-trigger buttonLink">
             <i className="material-icons">menu</i>
-          </a>
+          </button>
           <Link to={ROUTING_ACCUEIL} className="brand-logo"><Logo /></Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             {ROUTER.map(LinkHeader)}

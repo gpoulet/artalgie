@@ -33,6 +33,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.buttonLink {
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.buttonLink:hover, .ButtonLink:focus {
+  text-decoration: none;
+}
+
 .clickable {
   cursor: pointer;
 }
