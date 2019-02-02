@@ -31,7 +31,7 @@ function Intervenante() {
               supervisée dans sa pratique).
             </p>
 
-            <img className="responsive-img center-align" src="/images/intervenante.jpg"/>
+            <img className="responsive-img center-align" src="/images/intervenante.jpg" alt="L'intervenante"/>
 
           </div>
         </div>
