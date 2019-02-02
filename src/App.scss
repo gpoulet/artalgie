@@ -24,10 +24,13 @@ code {
     monospace;
 }
 
-#root>div>nav {
+#root>div>div>nav {
   background-color: $primary-color;
 }
 
+nav .nav-wrapper>.sidenav-trigger {
+  color: $menu-text;
+}
 nav .nav-wrapper>.brand-logo {
   color: $menu-text;
 }

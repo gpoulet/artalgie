@@ -14,10 +14,10 @@ export const LINK_PRECISIONS = "Précisions";
 export const LINK_PRESTATIONS = "Prestations";
 
 export const ROUTER = [
-  { routing: ROUTING_ACCUEIL, link: LINK_ACCUEIL },
-  { routing: ROUTING_PRECISIONS, link: LINK_PRECISIONS },
-  { routing: ROUTING_PRESTATIONS, link: LINK_PRESTATIONS },
-  { routing: ROUTING_INTERVENANTE, link: LINK_INTERVENANTE },
-  { routing: ROUTING_LIENS_UTILES, link: LINK_LIENS_UTILES },
-  { routing: ROUTING_CONTACT, link: LINK_CONTACT }
+  { routing: ROUTING_ACCUEIL, link: LINK_ACCUEIL, icon: "home" },
+  { routing: ROUTING_PRECISIONS, link: LINK_PRECISIONS, icon:"palette" },
+  { routing: ROUTING_PRESTATIONS, link: LINK_PRESTATIONS, icon: "business" },
+  { routing: ROUTING_INTERVENANTE, link: LINK_INTERVENANTE, icon: "face" },
+  { routing: ROUTING_LIENS_UTILES, link: LINK_LIENS_UTILES, icon: "link" },
+  { routing: ROUTING_CONTACT, link: LINK_CONTACT, icon: "mail" }
 ]
