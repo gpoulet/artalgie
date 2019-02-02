@@ -1,13 +1,17 @@
 $primary-color: white;
-$grey-blue: #37474f;
+$blue-grey: #607d8b;
+$blue-grey-dark: #37474f;
 $dark-grey: #424242;
 $light-grey: #eeeeee;
 $grey: #e0e0e0;
 $black: #000000;
 $blue: #0277bd;
+$yellow: #fbc02d;
 
-$menu-text: $grey-blue;
-$menu-link: $grey-blue;
+$logo-art: $yellow;
+$logo-algie: $blue-grey;
+$menu-text: $blue-grey-dark;
+$menu-link: $blue-grey-dark;
 $burger-menu-link-active-background: $light-grey;
 $burger-menu-link-active-text: $blue;
 $footer: $dark-grey;
@@ -23,12 +27,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
   monospace;
 }
 
+.brand-logo > .art {
+  color: $logo-art;
+  font-weight: 600;
+}
+
+.brand-logo > .algie {
+  color: $logo-algie;
+}
+
 #root > div > div > nav {
+  background-color: $primary-color;
+}
+#root > div > div > div > ul > li > nav {
   background-color: $primary-color;
 }
 
@@ -54,13 +74,21 @@ nav .nav-wrapper > ul#nav-mobile > li > a.active {
   font-family: 'Product Sans', Roboto, sans-serif;
 }
 
+.sidenav .user-view {
+  padding: 0;
+}
+
+ul.sidenav > li {
+  //background-color: $light-grey;
+}
+
 ul.sidenav > li > a.active {
   background-color: $burger-menu-link-active-background;
   color: $burger-menu-link-active-text;
   font-weight: 700;
 }
 
-ul.sidenav > li > a.active>i {
+ul.sidenav > li > a.active > i {
   color: $burger-menu-link-active-text;
 }
 
