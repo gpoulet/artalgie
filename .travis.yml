@@ -8,8 +8,6 @@ cache:
 script:
   - yarn test
   - yarn run build
-deploy:
-  provider: firebase
-  token:
-    secure: $FIREBASE_TOKEN
-  project: $FIREBASE_APP
+after_success:
+  - firebase use $FIREBASE_APP
+  - firebase deploy --non-interactive --token $FIREBASE_TOKEN
