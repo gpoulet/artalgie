@@ -9,5 +9,4 @@ script:
   - yarn test
   - yarn run build
 after_success:
-  - firebase use $FIREBASE_APP
-  - firebase deploy --non-interactive --token $FIREBASE_TOKEN
+  - firebase deploy $FIREBASE_APP --non-interactive --token $FIREBASE_TOKEN
