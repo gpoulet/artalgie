@@ -1,12 +1,15 @@
-$primary-color: white;
+$white: white;
 $blue-grey: #607d8b;
 $blue-grey-dark: #37474f;
 $dark-grey: #424242;
-$light-grey: #eeeeee;
+$light-grey: #f1f1f1;
 $grey: #e0e0e0;
 $black: #000000;
 $blue: #0277bd;
 $yellow: #fbc02d;
+$brown: #5d4037;
+
+$primary-color: $white;
 
 $logo-art: $yellow;
 $logo-algie: $blue-grey;
@@ -14,7 +17,10 @@ $menu-text: $blue-grey-dark;
 $menu-link: $blue-grey-dark;
 $burger-menu-link-active-background: $light-grey;
 $burger-menu-link-active-text: $blue;
-$footer: $dark-grey;
+$footer: $primary-color;
+$footer-text: $blue-grey-dark;
+$logo-art-weight: 600;
+
 
 body {
   background-color: $light-grey;
@@ -38,7 +44,7 @@ code {
 
 .brand-logo > .art {
   color: $logo-art;
-  font-weight: 600;
+  font-weight: $logo-art-weight;
 }
 
 .brand-logo > .algie {
@@ -50,6 +56,10 @@ code {
 }
 #root > div > div > div > ul > li > nav {
   background-color: $primary-color;
+}
+
+#root > div > div > div > ul {
+  background-color: $light-grey;
 }
 
 nav .nav-wrapper > .sidenav-trigger {
@@ -64,36 +74,40 @@ nav .nav-wrapper > ul#nav-mobile > li > a {
   color: $menu-text;
 }
 
-nav .nav-wrapper > ul#nav-mobile > li > a.active {
+nav .nav-wrapper > ul#nav-mobile > li > a.active,
+ul.sidenav > li > a.active {
   background-color: $burger-menu-link-active-background;
-  color: $burger-menu-link-active-text;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 992px) {
+
+  nav > div > a.brand-logo {
+    padding-left: 20px;
+  }
 }
 
 .brand-logo {
   font-family: 'Product Sans', Roboto, sans-serif;
+  font-size: 2.1rem;
 }
 
 .sidenav .user-view {
   padding: 0;
 }
 
-ul.sidenav > li {
-  //background-color: $light-grey;
-}
-
-ul.sidenav > li > a.active {
-  background-color: $burger-menu-link-active-background;
-  color: $burger-menu-link-active-text;
-  font-weight: 700;
-}
-
+nav .nav-wrapper > ul#nav-mobile > li > a.active,
+ul.sidenav > li > a.active ,
 ul.sidenav > li > a.active > i {
   color: $burger-menu-link-active-text;
 }
 
 footer.page-footer {
   background-color: $footer;
+}
+
+.footer-text {
+  color: $footer-text;
 }
 
 .hero-container {
