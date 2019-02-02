@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {
   Header,
   Footer,
@@ -10,7 +10,8 @@ import {
   LiensUtiles,
   Precisions,
   Prestations,
-  Error
+  Error,
+  ScrollToTop
 } from './components';
 import {
   ROUTING_ACCUEIL,
@@ -27,13 +28,17 @@ function App() {
     <Router>
       <div>
         <Header/>
-        <Route path={ROUTING_ACCUEIL} exact component={Accueil}/>
-        <Route path={ROUTING_CONTACT} component={Contact}/>
-        <Route path={ROUTING_INTERVENANTE} component={Intervenante}/>
-        <Route path={ROUTING_LIENS_UTILES} component={LiensUtiles}/>
-        <Route path={ROUTING_PRECISIONS} component={Precisions}/>
-        <Route path={ROUTING_PRESTATIONS} component={Prestations}/>
-        <Route path={ROUTING_ERROR} component={Error}/>
+        <ScrollToTop>
+          <Switch>
+            <Route path={ROUTING_ACCUEIL} exact component={Accueil}/>
+            <Route path={ROUTING_CONTACT} component={Contact}/>
+            <Route path={ROUTING_INTERVENANTE} component={Intervenante}/>
+            <Route path={ROUTING_LIENS_UTILES} component={LiensUtiles}/>
+            <Route path={ROUTING_PRECISIONS} component={Precisions}/>
+            <Route path={ROUTING_PRESTATIONS} component={Prestations}/>
+            <Route path={ROUTING_ERROR} component={Error}/>
+          </Switch>
+        </ScrollToTop>
         <Footer/>
       </div>
     </Router>

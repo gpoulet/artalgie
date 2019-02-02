@@ -1,7 +1,10 @@
 $primary-color: white;
 $grey-blue: #37474f;
+$dark-grey: #424242;
+
 $menu-text: $grey-blue;
 $menu-link: $grey-blue;
+$footer: $dark-grey;
 
 body {
   margin: 0;
@@ -18,7 +21,7 @@ code {
     monospace;
 }
 
-nav {
+#root>div>nav {
   background-color: $primary-color;
 }
 
@@ -29,3 +32,16 @@ nav .nav-wrapper>.brand-logo {
 nav .nav-wrapper>ul#nav-mobile>li>a {
   color: $menu-text;
 }
+
+footer.page-footer {
+  background-color: $footer;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9); }
+
+.parallax-container .section {
+  width: 100%; }

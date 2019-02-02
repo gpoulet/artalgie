@@ -8,4 +8,7 @@ import LiensUtiles from "./LiensUtiles";
 import Precisions from "./Precisions";
 import Prestations from "./Prestations";
 
-export { Accueil, Contact, Error, Footer, Header, Intervenante, LiensUtiles, Precisions, Prestations };
+import Parallax from "./Parallax";
+import ScrollToTop from "./ScrollToTop";
+
+export { Accueil, Contact, Error, Footer, Header, Intervenante, LiensUtiles, Precisions, Prestations, Parallax, ScrollToTop };

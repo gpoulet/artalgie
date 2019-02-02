@@ -1,1 +1,2 @@
-export * from "./routing.constants";
+export * from "./routing";
+export * from "./wording";
