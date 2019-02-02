@@ -19,7 +19,7 @@ function Footer() {
             <p className="footer-text">
               Téléphone : {TELEPHONE}<br/><br/>
               Adresse e-mail : {EMAIL}<br/><br/>
-              Facebook : {PAGE_FACEBOOK}
+              Facebook : <a href={PAGE_FACEBOOK} target="_blank" rel="noopener noreferrer">{PAGE_FACEBOOK}</a>
             </p>
           </div>
           <div className="col l4 offset-l2 s12">

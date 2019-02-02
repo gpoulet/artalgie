@@ -20,7 +20,8 @@ $burger-menu-link-active-text: $blue;
 $footer: $primary-color;
 $footer-text: $blue-grey-dark;
 $logo-art-weight: 600;
-
+$card-title: $yellow;
+$card-title-weight: 400;
 
 body {
   background-color: $light-grey;
@@ -64,6 +65,7 @@ code {
 #root > div > div > nav {
   background-color: $primary-color;
 }
+
 #root > div > div > div > ul > li > nav {
   background-color: $primary-color;
 }
@@ -107,7 +109,7 @@ ul.sidenav > li > a.active {
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a.active,
-ul.sidenav > li > a.active ,
+ul.sidenav > li > a.active,
 ul.sidenav > li > a.active > i {
   color: $burger-menu-link-active-text;
 }
@@ -144,4 +146,9 @@ footer.page-footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.card .card-title {
+  color: $card-title;
+  font-weight: $card-title-weight;
 }
