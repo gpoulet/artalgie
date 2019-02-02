@@ -2,7 +2,7 @@ import React from "react";
 import { ARTALGIE, ROUTER } from '../../constants'
 
 function LinkFooter({routing, link}) {
-  return <li><a className="grey-text text-lighten-3" href={routing}>{link}</a></li>
+  return <li key={routing}><a className="grey-text text-lighten-3" href={routing}>{link}</a></li>
 }
 
 function Footer() {

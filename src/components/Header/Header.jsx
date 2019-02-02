@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { ARTALGIE, ROUTER, ROUTING_ACCUEIL } from '../../constants'
 
 function LinkHeader({routing, link}) {
-  return <li><NavLink to={routing} activeClassName="active" exact>{link}</NavLink></li>
+  return <li key={routing}><NavLink to={routing} activeClassName="active" exact>{link}</NavLink></li>
 }
 
 function Header() {
