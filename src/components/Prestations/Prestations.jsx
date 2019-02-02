@@ -16,6 +16,7 @@ function Prestations() {
             <p>
               En <u>prévention</u>, pour améliorer la Qualité de Vie au Travail, ARTalgie propose des sessions comme
               suit :
+            </p>
               <ul>
                 <li> - La cohésion d'équipe</li>
                 <li> - Prendre la parole en public</li>
@@ -24,11 +25,11 @@ function Prestations() {
                 <li> - La confiance en soi</li>
 
               </ul>
-            </p>
             <br/>
             <p>
               En <u>aide</u>, ARTalgie peut intégrer votre plan d'actions contenu dans le document unique, ou suite à un
               diagnostic de risques. Les sessions proposées pourront alors s'intituler :
+            </p>
               <ul>
                 <li>- L'écoute dans le groupe</li>
                 <li>- La communication dans le groupe</li>
@@ -37,7 +38,6 @@ function Prestations() {
                 <li>- Lâcher-prise</li>
 
               </ul>
-            </p>
             <br/>
             <p>
               Plusieurs outils art-thérapeutiques peuvent être envisagés et mixés : théâtre, danse, peinture, terre,
