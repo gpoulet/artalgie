@@ -8,5 +8,7 @@ cache:
 script:
   - yarn test
   - yarn run build
+  - yarn global add firebase-tools
+
 after_success:
-  - firebase deploy $FIREBASE_APP --non-interactive --token $FIREBASE_TOKEN
+  - firebase deploy --project $FIREBASE_APP --non-interactive --token $FIREBASE_TOKEN
