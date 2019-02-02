@@ -14,7 +14,7 @@ function Header() {
       <nav>
         <div className="nav-wrapper">
           <button data-target="slide-out"
-            className="sidenav-trigger buttonLink">
+            className="sidenav-trigger buttonLink hide-on-large-only">
             <i className="material-icons">menu</i>
           </button>
           <Link to={ROUTING_ACCUEIL} className="brand-logo"><Logo /></Link>
