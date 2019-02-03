@@ -1,7 +1,8 @@
 import React from "react";
 import Parallax from '../Parallax'
 import Logo from '../Header/Logo'
-import { LINK_PRECISIONS } from '../../constants'
+import Ateliers from "./Ateliers";
+
 
 function Accueil() {
   return (<div className="accueil">
@@ -20,36 +21,22 @@ function Accueil() {
     </Parallax>
 
     <div className="row">
-      <div className="col s12 no-padding">
-        <div className="card no-margin">
-          <div className="card-content">
-            <span className="card-title brand-logo"><Logo/></span>
-
-            <p>
-              <span className="accueil-text">ARTalgie propose des sessions d'art-thérapie en entreprise pour prévenir et lutter contre les risques
+      <div className="col s12">
+        <p className="brand-logo"><Logo/></p>
+        <p><span className="accueil-text">ARTalgie propose des sessions d'art-thérapie en entreprise pour prévenir et lutter contre les risques
         psychosociaux, et notamment l'épuisement professionnel.</span>
-            </p>
-            <ul className="accueil-text">
-              <li>- Danse</li>
-              <li>- Théâtre</li>
-              <li>- Relaxation</li>
-              <li>- Peinture</li>
-              <li>- Terre</li>
-              <li>- Corps</li>
-              <li>- Mouvement</li>
-            </ul>
-          </div>
-        </div>
+        </p>
+
       </div>
     </div>
 
-
     <div>
+      <Ateliers/>
 
       <br/>
 
     </div>
-</div>);
+  </div>);
 }
 
 export default Accueil;

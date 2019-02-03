@@ -23,12 +23,17 @@ $footer: $primary-color;
 $footer-text: $blue-grey-dark;
 $logo-art-weight: 600;
 $logo-algie-weight: 400;
+$title: $yellow;
 $card-title: $yellow;
 $card-title-weight: 400;
+$promo-icon: $blue-grey;
+$promo-icon-info: $yellow;
+$promo-text-info: $dark-grey;
 
 $roboto: Roboto, sans-serif;
 $font-menu: $roboto;
 $font-footer: $roboto;
+
 
 body {
   background-color: $light-grey;
@@ -193,4 +198,20 @@ footer.page-footer {
 
 .card.no-margin {
   margin: 0;
+}
+
+.promo {
+  color: $promo-icon;
+}
+
+.promo-info {
+  color: $promo-icon-info;
+}
+
+.promo-text-info {
+  color: $promo-text-info;
+}
+
+.title {
+  color: $yellow;
 }
