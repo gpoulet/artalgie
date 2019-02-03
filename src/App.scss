@@ -1,6 +1,6 @@
 $white: white;
 $blue-grey: #607d8b;
-$blue-grey-dark: #37474f;
+$blue-grey-dark: #455a64;
 $dark-grey: #424242;
 $light-grey: #f1f1f1;
 $grey: #e0e0e0;
@@ -9,6 +9,7 @@ $blue: #0277bd;
 $yellow: #f9a825;
 $brown: #5d4037;
 $red: #e53935;
+$green: #0f9d58;
 
 $primary-color: $white;
 
@@ -24,6 +25,10 @@ $logo-art-weight: 600;
 $logo-algie-weight: 400;
 $card-title: $yellow;
 $card-title-weight: 400;
+
+$roboto: Roboto, sans-serif;
+$font-menu: $roboto;
+$font-footer: $roboto;
 
 body {
   background-color: $light-grey;
@@ -85,14 +90,27 @@ nav .nav-wrapper > .brand-logo {
   color: $menu-text;
 }
 
-nav .nav-wrapper > ul#nav-mobile > li > a {
-  color: $menu-text;
+nav .nav-wrapper > ul#nav-mobile > li > a:hover {
+  background-color: $white;
+  color: $black;
 }
 
-nav .nav-wrapper > ul#nav-mobile > li > a.active,
+nav .nav-wrapper > ul#nav-mobile > li > a {
+  color: $menu-text;
+  font-family: $font-menu;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+  margin: -4px 0 -4px 0;
+}
+
 ul.sidenav > li > a.active {
   background-color: $burger-menu-link-active-background;
   font-weight: 700;
+}
+
+nav .nav-wrapper > ul#nav-mobile > li > a.active {
+  font-weight: 700;
+  border-bottom-color: $burger-menu-link-active-text;
 }
 
 @media only screen and (min-width: 992px) {
@@ -111,7 +129,10 @@ ul.sidenav > li > a.active {
   padding: 0;
 }
 
-nav .nav-wrapper > ul#nav-mobile > li > a.active,
+nav .nav-wrapper > ul#nav-mobile > li > a.active {
+  color: $dark-grey;
+}
+
 ul.sidenav > li > a.active,
 ul.sidenav > li > a.active > i {
   color: $burger-menu-link-active-text;
@@ -123,6 +144,7 @@ footer.page-footer {
 
 .footer-text {
   color: $footer-text;
+  font-family: $font-footer;
 }
 
 .hero-container {
@@ -154,4 +176,21 @@ footer.page-footer {
 .card .card-title {
   color: $card-title;
   font-weight: $card-title-weight;
+}
+
+.accueil>.hero-container {
+  height: 30rem;
+}
+
+.accueil-text {
+  font-size: 1.4rem;
+  color: $black;
+}
+
+.col.no-padding {
+  padding: 0;
+}
+
+.card.no-margin {
+  margin: 0;
 }
