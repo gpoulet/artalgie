@@ -27,7 +27,7 @@ const ATELIERS = [
 
 function Atelier({ icon, name }) {
   return (
-    <div className={clazz}>
+    <div key={name} className={clazz}>
       <div className="card">
         <div className="card-content">
           <div className="center"><FontAwesomeIcon icon={icon} size="3x" className="promo"/><p
@@ -42,7 +42,7 @@ function Ateliers() {
     <div>
       <div className="row">
         {ATELIERS.map(Atelier)}
-        <div className={clazz}>
+        <div key="info" className={clazz}>
           <div className="card">
             <div className="card-content">
               <Link to={LINK_PRESTATIONS}>

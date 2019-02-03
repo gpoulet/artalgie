@@ -7,17 +7,15 @@ import Ateliers from "./Ateliers";
 function Accueil() {
   return (<div className="accueil">
 
-
     <Parallax
       min={'-20%'}
       max={'20%'}
       image="images/peinture.jpg"
     >
-      <p>
+      <div>
         <h1 className="white-text">ARTalgie</h1>
-
         <h5 className="white-text">Art-thérapie en entreprise</h5>
-      </p>
+      </div>
     </Parallax>
 
     <div className="row">
@@ -26,16 +24,16 @@ function Accueil() {
         <p><span className="accueil-text">ARTalgie propose des sessions d'art-thérapie en entreprise pour prévenir et lutter contre les risques
         psychosociaux, et notamment l'épuisement professionnel.</span>
         </p>
-
       </div>
     </div>
 
-    <div>
-      <Ateliers/>
+    <Ateliers/>
 
-      <br/>
-
-    </div>
+    <Parallax
+      min={'-20%'}
+      max={'20%'}
+      image="images/crayons.jpg"
+    ></Parallax>
   </div>);
 }
 
