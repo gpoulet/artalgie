@@ -13,7 +13,7 @@ import {
 import { Link } from 'react-router-dom'
 import { LINK_PRESTATIONS } from '../../constants'
 
-const clazz = "col s3 m3 l3"
+const clazz = "col s6 m3 l3"
 
 const ATELIERS = [
   { icon: faMusic, name: "Danse" },
