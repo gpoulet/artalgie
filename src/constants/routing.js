@@ -24,5 +24,5 @@ export const ROUTER = [
   { routing: ROUTING_PRESTATIONS, link: LINK_PRESTATIONS, icon: "business" },
   { routing: ROUTING_A_PROPOS, link: LINK_A_PROPOS, icon: "info" },
   { routing: ROUTING_CONTACT, link: LINK_CONTACT, icon: "mail" },
-  { routing: ROUTING_RESEAU, link: LINK_RESEAU, icon: "link" }
+  { routing: ROUTING_RESEAU, link: LINK_RESEAU, icon: "language" }
 ]
