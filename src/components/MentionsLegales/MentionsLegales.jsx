@@ -51,8 +51,8 @@ function MentionsLegales() {
             <p>
               L’utilisation du site <LinkArtalgie/> implique l’acceptation pleine et entière des conditions
               générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles
-              d’être modifiées ou complétées à tout moment, les utilisateurs du site <LinkArtalgie/>
-              sont donc invités à les consulter de manière régulière.
+              d’être modifiées ou complétées à tout moment, les utilisateurs du site <LinkArtalgie/> sont donc invités à
+              les consulter de manière régulière.
             </p>
             <p>
               Ce site est normalement accessible à tout moment aux utilisateurs. Une interruption pour
