@@ -7,11 +7,16 @@ $grey: #e0e0e0;
 $black: #000000;
 //$blue: #3b5998;
 $blue: #0277bd;
-$yellow: #f9a825;
+$yellow: #fdd835;
+//$yellow: #f9a825;
 $amber: #ffa000;
 $brown: #5d4037;
-$red: #e53935;
-$green: #0f9d58;
+$red: #ef5350;
+//$red: #e53935;
+$green: #81c784;
+//$green: #4caf50;
+//$green: #0f9d58;
+$purple: #9575cd;
 
 $primary-color: $blue;
 $accent-color: $amber;
@@ -21,6 +26,9 @@ $logo-algie: $white;
 $menu-text: $white;
 $burger-menu-link-active-background: $light-grey;
 $burger-menu-link-active-text: $accent-color;
+$burger-menu-link-active-text2: $green;
+$burger-menu-link-active-text3: $yellow;
+$burger-menu-link-active-text4: $red;
 $footer: $primary-color;
 $footer-text: $white;
 $footer-link: $white;
@@ -122,7 +130,23 @@ ul.sidenav > li > a.active {
 
 nav .nav-wrapper > ul#nav-mobile > li > a.active {
   font-weight: 700;
+  //border-bottom-color: $burger-menu-link-active-text;
+}
+
+nav .nav-wrapper > ul#nav-mobile > li:nth-child(4n+1) > a.active {
   border-bottom-color: $burger-menu-link-active-text;
+}
+
+nav .nav-wrapper > ul#nav-mobile > li:nth-child(4n+2) > a.active {
+  border-bottom-color: $burger-menu-link-active-text2;
+}
+
+nav .nav-wrapper > ul#nav-mobile > li:nth-child(4n+3) > a.active {
+  border-bottom-color: $burger-menu-link-active-text3;
+}
+
+nav .nav-wrapper > ul#nav-mobile > li:nth-child(4n) > a.active {
+  border-bottom-color: $burger-menu-link-active-text4;
 }
 
 @media only screen and (min-width: 992px) {
