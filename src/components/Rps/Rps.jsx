@@ -28,6 +28,22 @@ function Rps() {
             </p>
             <br/>
             <p><u>Il est possible de les prévenir.</u></p>
+            <br/>
+            <p>
+              Pour plus d'informations, je vous recommande ces lectures :</p>
+            <p>
+              <a
+                href="https://travail-emploi.gouv.fr/sante-au-travail/prevention-des-risques-pour-la-sante-au-travail/article/les-rps-c-est-quoi"
+                target="_blank"
+                rel="noopener noreferrer">Ministère du travail et de l'emploi</a><br/>
+              <a href="https://www.anact.fr/themes/risques-psychosociaux" target="_blank"
+                 rel="noopener noreferrer">Anact (Agence nationale pour l'amélioration des conditions de travail)</a><br/>
+              <a href="https://www.ameli.fr/llle-et-vilaine/entreprise/prevention/risques/risques-psychosociaux"
+                 target="_blank"
+                 rel="noopener noreferrer">Ameli (Assurance maladie)</a><br/>
+              <a href="http://www.inrs.fr/risques/psychosociaux/ce-qu-il-faut-retenir.html" target="_blank"
+                 rel="noopener noreferrer">INRS : Santé et sécurité au travail</a>
+            </p>
           </div>
         </div>
       </div>

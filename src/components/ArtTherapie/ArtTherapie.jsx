@@ -29,14 +29,13 @@ function ArtTherapie() {
             <br/>
 
             <p>Vous voulez en savoir d’avantage :</p>
-            <ul>
-              <li>
-                Wikipedia : <a href="https://fr.wikipedia.org/wiki/Art-thérapie" target="_blank"
-                            rel="noopener noreferrer">https://fr.wikipedia.org/wiki/Art-thérapie</a>
-              </li>
-              <li>FFAT : <a href="http://ffat-federation.org" target="_blank"
-                         rel="noopener noreferrer">http://ffat-federation.org</a></li>
-            </ul>
+            <p>
+              <a href="https://fr.wikipedia.org/wiki/Art-thérapie" target="_blank"
+                 rel="noopener noreferrer">Définition de l'art-thérapie sur Wikipedia</a>
+              <br/>
+              <a href="http://ffat-federation.org" target="_blank"
+                 rel="noopener noreferrer">FFAT (Fédération française des art-thérapeutes)</a>
+            </p>
           </div>
         </div>
       </div>
