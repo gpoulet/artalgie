@@ -23,6 +23,7 @@ $burger-menu-link-active-background: $light-grey;
 $burger-menu-link-active-text: $accent-color;
 $footer: $primary-color;
 $footer-text: $white;
+$footer-link: $white;
 $logo-art-weight: 600;
 $logo-algie-weight: 400;
 $title: $accent-color;
@@ -46,6 +47,10 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $primary-color;
 }
 
 .buttonLink {
@@ -155,6 +160,11 @@ footer.page-footer {
 
 .footer-text {
   color: $footer-text;
+  font-family: $font-footer;
+}
+
+.footer-link {
+  color: $footer-link;
   font-family: $font-footer;
 }
 

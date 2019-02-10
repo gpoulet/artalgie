@@ -27,7 +27,7 @@ function Footer() {
             <p className="footer-text">
               Téléphone : {TELEPHONE}<br/><br/>
               Adresse e-mail : {EMAIL}<br/><br/>
-              Facebook : <a href={PAGE_FACEBOOK} target="_blank" rel="noopener noreferrer">{PAGE_FACEBOOK}</a>
+              Facebook : <a href={PAGE_FACEBOOK} target="_blank" rel="noopener noreferrer" className="footer-text">{PAGE_FACEBOOK}</a>
             </p>
           </div>
           <div className="col l4 offset-l2 s12">
@@ -41,7 +41,7 @@ function Footer() {
       <div className="footer-copyright">
         <div className="container footer-text">
           © 2019 {ARTALGIE}
-          <Link className="footer-text right" to={ROUTING_MENTIONS_LEGALES}>{LINK_MENTIONS_LEGALES}</Link>
+          <Link className="footer-link right" to={ROUTING_MENTIONS_LEGALES}>{LINK_MENTIONS_LEGALES}</Link>
         </div>
       </div>
     </footer>);
