@@ -38,6 +38,7 @@ function APropos() {
             <p>
               Artalgie fait partie de la coopérative d‘entreprises Smart depuis janvier 2019.
             </p>
+            <br/>
             <p>
               Pour compléter et en savoir d’avantage :</p>
             <ul>
