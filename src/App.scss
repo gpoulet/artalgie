@@ -5,29 +5,31 @@ $dark-grey: #424242;
 $light-grey: #f1f1f1;
 $grey: #e0e0e0;
 $black: #000000;
+//$blue: #3b5998;
 $blue: #0277bd;
 $yellow: #f9a825;
+$amber: #ffa000;
 $brown: #5d4037;
 $red: #e53935;
 $green: #0f9d58;
 
-$primary-color: $white;
+$primary-color: $blue;
+$accent-color: $amber;
 
-$logo-art: $yellow;
-$logo-algie: $blue-grey;
-$menu-text: $blue-grey-dark;
-$menu-link: $blue-grey-dark;
+$logo-art: $accent-color;
+$logo-algie: $white;
+$menu-text: $white;
 $burger-menu-link-active-background: $light-grey;
-$burger-menu-link-active-text: $yellow;
+$burger-menu-link-active-text: $accent-color;
 $footer: $primary-color;
-$footer-text: $blue-grey-dark;
+$footer-text: $white;
 $logo-art-weight: 600;
 $logo-algie-weight: 400;
-$title: $yellow;
-$card-title: $yellow;
+$title: $accent-color;
+$card-title: $accent-color;
 $card-title-weight: 400;
 $promo-icon: $blue-grey;
-$promo-icon-info: $yellow;
+$promo-icon-info: $accent-color;
 $promo-text-info: $dark-grey;
 
 $roboto: Roboto, sans-serif;
@@ -84,7 +86,7 @@ code {
 }
 
 #root > div > div > div > ul {
-  background-color: $light-grey;
+  background-color: $white;
 }
 
 nav .nav-wrapper > .sidenav-trigger {
@@ -96,8 +98,8 @@ nav .nav-wrapper > .brand-logo {
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a:hover {
-  background-color: $white;
-  color: $black;
+  background-color: $primary-color;
+  color: $light-grey;
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a {
@@ -135,12 +137,16 @@ nav .nav-wrapper > ul#nav-mobile > li > a.active {
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a.active {
-  color: $dark-grey;
+  color: $white;
 }
 
 ul.sidenav > li > a.active,
 ul.sidenav > li > a.active > i {
   color: $burger-menu-link-active-text;
+}
+
+.sidenav-trigger.buttonLink:focus {
+  background-color: $primary-color;
 }
 
 footer.page-footer {
@@ -213,5 +219,5 @@ footer.page-footer {
 }
 
 .title {
-  color: $yellow;
+  color: $accent-color;
 }
