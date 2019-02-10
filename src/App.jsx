@@ -5,12 +5,13 @@ import {
   Header,
   Footer,
   Accueil,
+  ArtTherapie,
   Contact,
-  Intervenante,
-  LiensUtiles,
+  APropos,
+  Reseau,
   MentionsLegales,
-  Precisions,
   Prestations,
+  Rps,
   Error,
   ScrollToTop
 } from './components';
@@ -18,11 +19,11 @@ import {
   ROUTING_ACCUEIL,
   ROUTING_CONTACT,
   ROUTING_ERROR,
-  ROUTING_INTERVENANTE,
-  ROUTING_LIENS_UTILES,
+  ROUTING_A_PROPOS,
+  ROUTING_RESEAU,
   ROUTING_MENTIONS_LEGALES,
-  ROUTING_PRECISIONS,
-  ROUTING_PRESTATIONS
+  ROUTING_ART_THERAPIE,
+  ROUTING_PRESTATIONS, ROUTING_RPS
 } from './constants'
 import ParallaxProvider from 'react-scroll-parallax/lib/components/ParallaxProvider'
 
@@ -35,12 +36,13 @@ function App() {
           <ParallaxProvider>
             <Switch>
               <Route path={ROUTING_ACCUEIL} exact component={Accueil}/>
+              <Route path={ROUTING_A_PROPOS} component={APropos}/>
+              <Route path={ROUTING_ART_THERAPIE} component={ArtTherapie}/>
               <Route path={ROUTING_CONTACT} component={Contact}/>
-              <Route path={ROUTING_INTERVENANTE} component={Intervenante}/>
-              <Route path={ROUTING_LIENS_UTILES} component={LiensUtiles}/>
+              <Route path={ROUTING_RESEAU} component={Reseau}/>
               <Route path={ROUTING_MENTIONS_LEGALES} component={MentionsLegales}/>
-              <Route path={ROUTING_PRECISIONS} component={Precisions}/>
               <Route path={ROUTING_PRESTATIONS} component={Prestations}/>
+              <Route path={ROUTING_RPS} component={Rps}/>
               <Route path={ROUTING_ERROR} component={Error}/>
             </Switch>
           </ParallaxProvider>

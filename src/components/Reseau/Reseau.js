@@ -1,12 +1,12 @@
 import React from "react";
-import { LINK_LIENS_UTILES } from '../../constants'
+import { LINK_RESEAU } from '../../constants'
 
-function LiensUtiles() {
+function Reseau() {
   return (<div className="row">
       <div className="col s12">
         <div className="card">
           <div className="card-content">
-            <span className="card-title">{LINK_LIENS_UTILES}</span>
+            <span className="card-title">{LINK_RESEAU}</span>
 
             <p>
               Concernant l'art-thérapie :<br/>
@@ -78,4 +78,4 @@ function LiensUtiles() {
   );
 }
 
-export default LiensUtiles;
+export default Reseau;

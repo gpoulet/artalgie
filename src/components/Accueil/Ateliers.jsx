@@ -11,7 +11,7 @@ import {
   faPlus
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-import { LINK_PRESTATIONS } from '../../constants'
+import { ROUTING_PRESTATIONS } from '../../constants'
 
 const clazz = "col s6 m3 l3"
 
@@ -45,7 +45,7 @@ function Ateliers() {
         <div key="info" className={clazz}>
           <div className="card">
             <div className="card-content">
-              <Link to={LINK_PRESTATIONS}>
+              <Link to={ROUTING_PRESTATIONS}>
                 <div className="center">
                   <FontAwesomeIcon icon={faPlus} size="3x" className="promo-info"/>
                   <p className="promo-text-info">Plus d'informations</p></div>
