@@ -5,7 +5,7 @@ import Parallax from '../Parallax'
 function APropos() {
   return (
     <div className="card">
-      <div className="card-content">
+      <div className="card-content a-propos">
             <span className="card-title">{LINK_A_PROPOS}</span>
             <p>ARTalgie est dirigée par Nathalie POULET-GUILBERT, art-thérapeute certifiée, formée par ARTEEP, adhérant
               à la charte de déontologie de la Fédération Française des Art-Thérapeutes.
