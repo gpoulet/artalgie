@@ -1,5 +1,5 @@
 export const ROUTING_ACCUEIL = "/";
-export const ROUTING_A_PROPOS = "/intervenante";
+export const ROUTING_A_PROPOS = "/a-propos";
 export const ROUTING_ART_THERAPIE = "/art-therapie";
 export const ROUTING_CONTACT = "/contact";
 export const ROUTING_MENTIONS_LEGALES = "/mentions-legales";
