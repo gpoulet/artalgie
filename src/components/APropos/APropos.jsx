@@ -1,12 +1,11 @@
 import React from "react";
 import { LINK_A_PROPOS, SITE_NATHALIE } from '../../constants'
+import Parallax from '../Parallax'
 
 function APropos() {
   return (
     <div className="card">
       <div className="card-content">
-        <div className="row">
-          <div className="col s12 m8">
             <span className="card-title">{LINK_A_PROPOS}</span>
             <p>ARTalgie est dirigée par Nathalie POULET-GUILBERT, art-thérapeute certifiée, formée par ARTEEP, adhérant
               à la charte de déontologie de la Fédération Française des Art-Thérapeutes.
@@ -55,11 +54,13 @@ function APropos() {
                   Smart</a>
               </li>
             </ul>
-          </div>
-        </div>
-        <div className="col s12 m4">
-          <img className="responsive-img center-align" src="/images/intervenante.jpg" alt="L'intervenante"/>
-        </div>
+
+        <Parallax
+          min={'-20%'}
+          max={'20%'}
+          image="/images/intervenante.jpg"
+        >
+        </Parallax>
 
       </div>
     </div>
