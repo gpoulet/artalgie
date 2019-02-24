@@ -17,12 +17,20 @@ export const LINK_PRESTATIONS = "Prestations";
 export const LINK_RESEAU = "Réseau";
 export const LINK_RPS = "Les RPS";
 
+export const ICON_ACCUEIL = "home";
+export const ICON_ART_THERAPIE = "palette";
+export const ICON_RPS = "sentiment_dissatisfied";
+export const ICON_PRESTATIONS = "business";
+export const ICON_A_PROPS = "info";
+export const ICON_CONTACT = "mail";
+export const ICON_RESEAU = "language";
+
 export const ROUTER = [
-  { routing: ROUTING_ACCUEIL, link: LINK_ACCUEIL, icon: "home", exact: true },
-  { routing: ROUTING_ART_THERAPIE, link: LINK_ART_THERAPIE, icon: "palette" },
-  { routing: ROUTING_RPS, link: LINK_RPS, icon: "sentiment_dissatisfied" },
-  { routing: ROUTING_PRESTATIONS, link: LINK_PRESTATIONS, icon: "business" },
-  { routing: ROUTING_A_PROPOS, link: LINK_A_PROPOS, icon: "info" },
-  { routing: ROUTING_CONTACT, link: LINK_CONTACT, icon: "mail" },
-  { routing: ROUTING_RESEAU, link: LINK_RESEAU, icon: "language" }
+  { routing: ROUTING_ACCUEIL, link: LINK_ACCUEIL, icon: ICON_ACCUEIL, exact: true },
+  { routing: ROUTING_ART_THERAPIE, link: LINK_ART_THERAPIE, icon: ICON_ART_THERAPIE },
+  { routing: ROUTING_RPS, link: LINK_RPS, icon: ICON_RPS },
+  { routing: ROUTING_PRESTATIONS, link: LINK_PRESTATIONS, icon: ICON_PRESTATIONS },
+  { routing: ROUTING_A_PROPOS, link: LINK_A_PROPOS, icon: ICON_A_PROPS },
+  { routing: ROUTING_CONTACT, link: LINK_CONTACT, icon: ICON_CONTACT },
+  { routing: ROUTING_RESEAU, link: LINK_RESEAU, icon: ICON_RESEAU }
 ]
