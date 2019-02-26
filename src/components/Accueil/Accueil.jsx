@@ -32,7 +32,7 @@ function Accueil() {
       <div className="col s12 center-align">
         {/*<i className="medium material-icons blue-text">{ICON_ART_THERAPIE}</i>*/}
         <h4>
-          L'art-thérapie est au cœur de dispositif que propose {ARTALGIE}.</h4>
+          L'art-thérapie est au cœur du dispositif que propose {ARTALGIE}.</h4>
 
 
         <p className="accueil-text">Vous ne savez pas ce qu'est l'art-thérapie ?</p>
