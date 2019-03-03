@@ -72,7 +72,7 @@ function Accueil() {
           psychosociaux, et notamment l'épuisement professionnel.</h4>
 
 
-        <p className="accueil-text">Les RPS c'est quoi ? Je vous éclaire….</p>
+        <p className="accueil-text">Les RPS c'est quoi ? On vous éclaire….</p>
         <Link to={ROUTING_RPS}
               className="waves-effect waves-light btn button-red">
           <i className="material-icons left">{ICON_RPS}</i>
