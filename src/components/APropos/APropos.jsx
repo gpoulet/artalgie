@@ -1,5 +1,5 @@
 import React from "react";
-import { LINK_A_PROPOS, SITE_NATHALIE } from '../../constants'
+import { LINK_A_PROPOS, SITE_NATHALIE, ARTALGIE } from '../../constants'
 import Parallax from '../Parallax'
 
 function APropos() {
@@ -7,7 +7,7 @@ function APropos() {
     <div className="card">
       <div className="card-content a-propos">
             <span className="card-title">{LINK_A_PROPOS}</span>
-            <p>ARTalgie est dirigée par Nathalie POULET-GUILBERT, art-thérapeute certifiée, formée par ARTEEP, adhérant
+            <p>{ARTALGIE} est dirigée par Nathalie POULET-GUILBERT, art-thérapeute certifiée, formée par ARTEEP, adhérant
               à la charte de déontologie de la Fédération Française des Art-Thérapeutes.
             </p>
             <p>
@@ -35,7 +35,7 @@ function APropos() {
             </p>
             <br/>
             <p>
-              Artalgie fait partie de la coopérative d‘entreprises Smart depuis janvier 2019.
+             {ARTALGIE} fait partie de la coopérative d‘entreprises Smart depuis janvier 2019.
             </p>
             <br/>
             <p>

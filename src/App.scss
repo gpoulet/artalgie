@@ -16,24 +16,26 @@ $red: #ef5350;
 $green: #81c784;
 //$green: #4caf50;
 //$green: #0f9d58;
-$purple: #9575cd;
+$purple: #8F5E72;
+$beige: #D0C3BD;
 
-$primary-color: $blue;
-$accent-color: $amber;
+$primary-color: $beige;
+$accent-color: $purple;
 
-$logo-art: $accent-color;
+$logo-weight: 500;
+$logo-art: $white;
 $logo-algie: $white;
-$menu-text: $white;
+$menu-text: $black;
 $burger-menu-link-active-background: $light-grey;
-$burger-menu-link-active-text: $accent-color;
-$burger-menu-link-active-text2: $green;
-$burger-menu-link-active-text3: $yellow;
-$burger-menu-link-active-text4: $red;
+$burger-menu-link-active-text: $white;
+$burger-menu-link-active-text-mobile: $purple;
 $footer: $primary-color;
-$footer-text: $white;
-$footer-link: $white;
-$logo-art-weight: 600;
-$logo-algie-weight: 400;
+$footer-text: $black;
+$footer-text-label: $purple;
+$footer-text-title: $purple;
+$footer-link: $black;
+$logo-art-weight: $logo-weight;
+$logo-algie-weight: $logo-weight;
 $title: $accent-color;
 $card-title: $accent-color;
 $card-title-weight: 400;
@@ -42,9 +44,15 @@ $promo-icon-info: $accent-color;
 $promo-text-info: $dark-grey;
 
 $roboto: Roboto, sans-serif;
+$blogger: BloggerSans, Roboto, sans-serif;
 $font-menu: $roboto;
+$font-footer-title: $blogger;
 $font-footer: $roboto;
 
+@font-face {
+  font-family: 'BloggerSans';
+  src: local('BloggerSans'), url('./fonts/BloggerSans.woff') format('woff');
+}
 
 body {
   background-color: $light-grey;
@@ -58,7 +66,7 @@ body {
 }
 
 a {
-  color: $primary-color;
+  color: $purple;
 }
 
 .buttonLink {
@@ -81,11 +89,13 @@ code {
 }
 
 .brand-logo > .art {
+  font-family: $blogger;
   color: $logo-art;
   font-weight: $logo-art-weight;
 }
 
 .brand-logo > .algie {
+  font-family: $blogger;
   color: $logo-algie;
   font-weight: $logo-algie-weight;
 }
@@ -103,7 +113,7 @@ code {
 }
 
 nav .nav-wrapper > .sidenav-trigger {
-  color: $menu-text;
+  color: $white;
 }
 
 nav .nav-wrapper > .brand-logo {
@@ -112,7 +122,7 @@ nav .nav-wrapper > .brand-logo {
 
 nav .nav-wrapper > ul#nav-mobile > li > a:hover {
   background-color: $primary-color;
-  color: $light-grey;
+  color: $purple;
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a {
@@ -133,20 +143,8 @@ nav .nav-wrapper > ul#nav-mobile > li > a.active {
   //border-bottom-color: $burger-menu-link-active-text;
 }
 
-nav .nav-wrapper > ul#nav-mobile > li:nth-child(4n+1) > a.active {
+nav .nav-wrapper > ul#nav-mobile > li > a.active {
   border-bottom-color: $burger-menu-link-active-text;
-}
-
-nav .nav-wrapper > ul#nav-mobile > li:nth-child(4n+2) > a.active {
-  border-bottom-color: $burger-menu-link-active-text2;
-}
-
-nav .nav-wrapper > ul#nav-mobile > li:nth-child(4n+3) > a.active {
-  border-bottom-color: $burger-menu-link-active-text3;
-}
-
-nav .nav-wrapper > ul#nav-mobile > li:nth-child(4n) > a.active {
-  border-bottom-color: $burger-menu-link-active-text4;
 }
 
 @media only screen and (min-width: 992px) {
@@ -166,12 +164,12 @@ nav .nav-wrapper > ul#nav-mobile > li:nth-child(4n) > a.active {
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a.active {
-  color: $white;
+  color: $purple;
 }
 
 ul.sidenav > li > a.active,
 ul.sidenav > li > a.active > i {
-  color: $burger-menu-link-active-text;
+  color: $burger-menu-link-active-text-mobile;
 }
 
 .sidenav-trigger.buttonLink:focus {
@@ -185,6 +183,18 @@ footer.page-footer {
 .footer-text {
   color: $footer-text;
   font-family: $font-footer;
+}
+
+.footer-text-label {
+  color: $footer-text-label;
+  font-family: $font-footer;
+  font-weight: 500;
+}
+
+.footer-title {
+  color: $footer-text-title;
+  font-family: $font-footer;
+  font-size: 1.8rem;
 }
 
 .footer-link {
@@ -221,6 +231,7 @@ footer.page-footer {
 .card .card-title {
   color: $card-title;
   font-weight: $card-title-weight;
+  font-family: $blogger;
 }
 
 .accueil>.hero-container {
@@ -283,3 +294,13 @@ footer.page-footer {
   color: $amber;
 }
 
+.white-square {
+  border-radius: 20px;
+  color: $purple;
+  background-color: $white;
+  font-family: $blogger;
+  padding: 14px 14px 0px 14px;
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-align: center;
+}

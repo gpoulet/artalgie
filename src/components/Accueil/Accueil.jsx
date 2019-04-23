@@ -23,8 +23,8 @@ function Accueil() {
       image="images/peinture.jpg"
     >
       <div>
-        <h1 className="white-text"><span className="text-amber">ART</span>algie</h1>
-        <h5 className="white-text">Art-thérapie en entreprise</h5>
+        <img src="/images/logo/logo-white.svg" width="300px" alt="Artalgie" />
+        <div className="white-square">Art-thérapie en entreprise</div>
       </div>
     </Parallax>
 

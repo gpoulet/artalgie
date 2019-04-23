@@ -9,7 +9,7 @@ import {
   LINK_MENTIONS_LEGALES
 } from '../../constants'
 import { Link } from 'react-router-dom'
-import Logo from '../Header/Logo'
+import Logo from './Logo'
 
 function LinkFooter({ routing, link }) {
   return <li key={routing}><Link className="footer-text" to={routing}>{link}</Link></li>
@@ -25,14 +25,14 @@ function Footer() {
               <Logo/>
             </div>
             <p className="footer-text">
-              Téléphone : {TELEPHONE}<br/><br/>
-              Adresse e-mail : {EMAIL}<br/><br/>
-              Facebook : <a href={PAGE_FACEBOOK} target="_blank" rel="noopener noreferrer" className="footer-text">{PAGE_FACEBOOK}</a>
+              <span className="footer-text-label">Téléphone : </span>{TELEPHONE}<br/>
+              <span className="footer-text-label">Adresse e-mail : </span>{EMAIL}<br/>
+              <span className="footer-text-label">Facebook : </span><a href={PAGE_FACEBOOK} target="_blank" rel="noopener noreferrer" className="footer-text">{PAGE_FACEBOOK}</a>
             </p>
           </div>
           <div className="col l4 offset-l2 s12">
-            <h5 className="footer-text">Liens</h5>
-            <ul>
+            <div className="footer-title">Liens</div>
+            <ul className="footer-text">
               {ROUTER.map(LinkFooter)}
             </ul>
           </div>
