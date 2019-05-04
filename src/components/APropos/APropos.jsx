@@ -1,6 +1,5 @@
 import React from "react";
 import { LINK_A_PROPOS, SITE_NATHALIE, ARTALGIE } from '../../constants'
-import Parallax from '../Parallax'
 
 function APropos() {
   return (
