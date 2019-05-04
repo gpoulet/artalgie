@@ -16,7 +16,9 @@ $red: #ef5350;
 $green: #81c784;
 //$green: #4caf50;
 //$green: #0f9d58;
-$purple: #8F5E72;
+//$purple: #8F5E72;
+//$purple: #994d79;
+$purple: #a3437a;
 $beige: #D0C3BD;
 
 $primary-color: $beige;
@@ -26,6 +28,7 @@ $logo-weight: 500;
 $logo-art: $white;
 $logo-algie: $white;
 $menu-text: $black;
+$menu-text-weight: 400;
 $burger-menu-link-active-background: $light-grey;
 $burger-menu-link-active-text: $white;
 $burger-menu-link-active-text-mobile: $purple;
@@ -123,10 +126,12 @@ nav .nav-wrapper > .brand-logo {
 nav .nav-wrapper > ul#nav-mobile > li > a:hover {
   background-color: $primary-color;
   color: $purple;
+  font-weight: 600;
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a {
   color: $menu-text;
+  font-weight: $menu-text-weight;
   font-family: $font-menu;
   border-bottom: 2px solid transparent;
   border-top: 2px solid transparent;
@@ -139,12 +144,12 @@ ul.sidenav > li > a.active {
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a.active {
-  font-weight: 700;
-  //border-bottom-color: $burger-menu-link-active-text;
-}
-
-nav .nav-wrapper > ul#nav-mobile > li > a.active {
-  border-bottom-color: $burger-menu-link-active-text;
+ // border-radius: 10px;
+ // border-bottom-color: $purple;
+  background-color: $white;
+  font-weight: 600;
+  font-size: 1rem;
+  color: $purple;
 }
 
 @media only screen and (min-width: 992px) {
@@ -161,10 +166,6 @@ nav .nav-wrapper > ul#nav-mobile > li > a.active {
 
 .sidenav .user-view {
   padding: 0;
-}
-
-nav .nav-wrapper > ul#nav-mobile > li > a.active {
-  color: $purple;
 }
 
 ul.sidenav > li > a.active,
