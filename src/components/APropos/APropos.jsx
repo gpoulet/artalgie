@@ -6,8 +6,17 @@ function APropos() {
   return (
     <div className="card">
       <div className="card-content a-propos">
-            <span className="card-title">{LINK_A_PROPOS}</span>
-            <p>{ARTALGIE} est dirigée par Nathalie POULET-GUILBERT, art-thérapeute certifiée, formée par ARTEEP, adhérant
+        <span className="card-title">{LINK_A_PROPOS}</span>
+        <div className="row">
+          <div className="col m4 push-m8 l3 push-l9 xl2 push-xl10 intervenante">
+            <img className="responsive-img circle" src="/images/intervenante.jpg"/>
+            <p className="center-align">Nathalie POULET-GUILBERT</p>
+          </div>
+          <div className="col m8 pull-m4 l9 pull-l3 xl10 pull-xl2">
+
+
+            <p>{ARTALGIE} est dirigée par Nathalie POULET-GUILBERT, art-thérapeute certifiée, formée par ARTEEP,
+              adhérant
               à la charte de déontologie de la Fédération Française des Art-Thérapeutes.
             </p>
             <p>
@@ -35,7 +44,7 @@ function APropos() {
             </p>
             <br/>
             <p>
-             {ARTALGIE} fait partie de la coopérative d‘entreprises Smart depuis janvier 2019.
+              {ARTALGIE} fait partie de la coopérative d‘entreprises Smart depuis janvier 2019.
             </p>
             <br/>
             <p>
@@ -54,13 +63,9 @@ function APropos() {
                   Smart</a>
               </li>
             </ul>
+          </div>
+        </div>
 
-        <Parallax
-          min={'-20%'}
-          max={'20%'}
-          image="/images/intervenante.jpg"
-        >
-        </Parallax>
 
       </div>
     </div>
