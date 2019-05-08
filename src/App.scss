@@ -25,8 +25,7 @@ $primary-color: $beige;
 $accent-color: $purple;
 
 $logo-weight: 500;
-$logo-art: $white;
-$logo-algie: $white;
+$logo-color: $white;
 $menu-text: $black;
 $menu-text-weight: 400;
 $burger-menu-link-active-background: $light-grey;
@@ -37,8 +36,6 @@ $footer-text: $black;
 $footer-text-label: $purple;
 $footer-text-title: $purple;
 $footer-link: $black;
-$logo-art-weight: $logo-weight;
-$logo-algie-weight: $logo-weight;
 $title: $accent-color;
 $card-title: $accent-color;
 $card-title-weight: 400;
@@ -91,16 +88,10 @@ code {
   monospace;
 }
 
-.brand-logo > .art {
+.brand-logo > .logo {
   font-family: $blogger;
-  color: $logo-art;
-  font-weight: $logo-art-weight;
-}
-
-.brand-logo > .algie {
-  font-family: $blogger;
-  color: $logo-algie;
-  font-weight: $logo-algie-weight;
+  color: $logo-color;
+  font-weight: $logo-weight;
 }
 
 #root > div > div > nav {
@@ -296,11 +287,11 @@ footer.page-footer {
 }
 
 .white-square {
-  border-radius: 20px;
+  border-radius: 0.6em;
   color: $purple;
   background-color: $white;
   font-family: $blogger;
-  padding: 14px 14px 0px 14px;
+  padding: 0.6em 0.5em 0 0.5em;
   font-weight: 500;
   font-size: 1.7rem;
   text-align: center;
@@ -308,4 +299,11 @@ footer.page-footer {
 
 .intervenante {
   margin-bottom: 30px;
+}
+
+.material-icons.contact {
+  //font-size: 12px;
+  margin: 0 12px 0 0;
+  width: 24px;
+  color: $purple;
 }
