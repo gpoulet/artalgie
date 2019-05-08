@@ -7,7 +7,6 @@ $grey: #e0e0e0;
 $black: #000000;
 //$blue: #3b5998;
 $blue: #0277bd;
-$yellow: #fdd835;
 //$yellow: #f9a825;
 $amber: #ffa000;
 $brown: #5d4037;
@@ -21,10 +20,14 @@ $green: #81c784;
 $purple: #a3437a;
 $beige: #D0C3BD;
 //$yellow-post-it: #f2ab00
+$yellow: #ffc548;
 $yellow-post-it: #E5BA6A;
+$pink: #e48873;
 $pink-scotch: #D09587;
 $blue-post-it: #70ACB0;
+$blue-light: #5ebcc2;
 $grey-purple-scotch: #B3A8B4;
+$grey-purple: #b5a4b8;
 $white-grey: #efefef;
 
 $primary-color: $beige;
@@ -288,18 +291,28 @@ footer.page-footer {
   color: $accent-color;
 }
 
-.button-amber, .button-amber:hover {
-  background-color: $amber;
+.button-purple, .button-purple:hover {
+  background-color: $purple;
   color: $white;
 }
 
-.button-green, .button-green:hover {
-  background-color: $green;
+.button-blue-light, .button-blue-light:hover {
+  background-color: $blue-light;
   color: $white;
 }
 
-.button-red, .button-red:hover {
-  background-color: $red;
+.button-pink, .button-pink:hover {
+  background-color: $pink;
+  color: $white;
+}
+
+.button-yellow, .button-yellow:hover {
+  background-color: $yellow;
+  color: $white;
+}
+
+.button-grey-purple, .button-grey-purple:hover {
+  background-color: $grey-purple;
   color: $white;
 }
 
@@ -328,7 +341,6 @@ footer.page-footer {
 
 .material-icons.contact {
   margin: 0 10px 0 0;
-  //color: $yellow-post-it;
 }
 
 .contact-card-content > p > a {
