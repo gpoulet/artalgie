@@ -39,9 +39,9 @@ function Footer() {
         </div>
       </div>
       <div className="footer-copyright">
-        <div className="container footer-text">
+        <div className="container footer-bottom-text">
           © 2019 {ARTALGIE}
-          <Link className="footer-link right" to={ROUTING_MENTIONS_LEGALES}>{LINK_MENTIONS_LEGALES}</Link>
+          <Link className="footer-bottom-link right" to={ROUTING_MENTIONS_LEGALES}>{LINK_MENTIONS_LEGALES}</Link>
         </div>
       </div>
     </footer>);

@@ -20,6 +20,11 @@ $green: #81c784;
 //$purple: #994d79;
 $purple: #a3437a;
 $beige: #D0C3BD;
+//$yellow-post-it: #f2ab00
+$yellow-post-it: #E5BA6A;
+$pink-scotch: #D09587;
+$blue-post-it: #70ACB0;
+$grey-purple-scotch: #B3A8B4;
 
 $primary-color: $beige;
 $accent-color: $purple;
@@ -33,9 +38,11 @@ $burger-menu-link-active-text: $white;
 $burger-menu-link-active-text-mobile: $purple;
 $footer: $primary-color;
 $footer-text: $black;
+$footer-bottom-text: $white;
 $footer-text-label: $purple;
 $footer-text-title: $purple;
 $footer-link: $black;
+$footer-bottom-link: $white;
 $title: $accent-color;
 $card-title: $accent-color;
 $card-title-weight: 400;
@@ -177,6 +184,11 @@ footer.page-footer {
   font-family: $font-footer;
 }
 
+.footer-bottom-text {
+  color: $footer-bottom-text;
+  font-family: $font-footer;
+}
+
 .footer-text-label {
   color: $footer-text-label;
   font-family: $font-footer;
@@ -191,6 +203,11 @@ footer.page-footer {
 
 .footer-link {
   color: $footer-link;
+  font-family: $font-footer;
+}
+
+.footer-bottom-link {
+  color: $footer-bottom-link;
   font-family: $font-footer;
 }
 
@@ -228,6 +245,10 @@ footer.page-footer {
 
 .accueil>.hero-container {
   height: 40rem;
+}
+
+.accueil-title {
+  font-family: $blogger;
 }
 
 .a-propos>.hero-container {

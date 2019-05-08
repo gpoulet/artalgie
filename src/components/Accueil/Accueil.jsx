@@ -31,7 +31,7 @@ function Accueil() {
     <div className="row white">
       <div className="col s12 center-align">
         {/*<i className="medium material-icons blue-text">{ICON_ART_THERAPIE}</i>*/}
-        <h4>
+        <h4 className="accueil-title">
           L'art-thérapie est au cœur du dispositif que propose {ARTALGIE}.</h4>
 
 
@@ -48,7 +48,7 @@ function Accueil() {
 
     <div className="row">
       <div className="col s12 center-align">
-        <h4>
+       <h4 className="accueil-title">
           Une étude personnalisée de vos besoins ?</h4>
 
 
@@ -67,7 +67,7 @@ function Accueil() {
 
     <div className="row white">
       <div className="col s12 center-align">
-        <h4>
+       <h4 className="accueil-title">
           {ARTALGIE} propose des sessions d'art-thérapie en entreprise pour prévenir et lutter contre les risques
           psychosociaux, et notamment l'épuisement professionnel.</h4>
 
@@ -85,7 +85,7 @@ function Accueil() {
 
     <div className="row">
       <div className="col s12 center-align">
-        <h4>{ARTALGIE}, c'est un concept innovant, pour des interventions sur mesure.</h4>
+       <h4 className="accueil-title">{ARTALGIE}, c'est un concept innovant, pour des interventions sur mesure.</h4>
 
         <p className="accueil-text">Vous voulez en savoir plus sur les prestations, et les modalités d'intervention...</p>
         <Link to={ROUTING_PRESTATIONS}
@@ -99,7 +99,7 @@ function Accueil() {
 
     <div className="row white">
       <div className="col s12 center-align">
-        <h4>{ARTALGIE}</h4>
+       <h4 className="accueil-title">{ARTALGIE}</h4>
         <p className="accueil-text">C'est quoi ? c'est qui ?</p>
 
         <Link to={ROUTING_A_PROPOS}
@@ -115,7 +115,7 @@ function Accueil() {
 
     <div className="row">
       <div className="col s12 center-align">
-        <h4>{ARTALGIE} vous recommande.</h4>
+       <h4 className="accueil-title">{ARTALGIE} vous recommande.</h4>
 
         <p className="accueil-text">Des partenaires, des professionnels, des rencontres, des amis…</p>
         <Link to={ROUTING_RESEAU}
