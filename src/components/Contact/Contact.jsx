@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   CONTACTS, LINK_CONTACT
 } from '../../constants'
@@ -28,4 +28,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default memo(Contact);

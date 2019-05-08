@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { LINK_A_PROPOS, SITE_NATHALIE, ARTALGIE } from '../../constants'
 
 function APropos() {
@@ -18,7 +18,7 @@ function APropos() {
 
                 <p>{ARTALGIE} est dirigée par Nathalie POULET-GUILBERT, art-thérapeute certifiée, formée par ARTEEP,
                   adhérant
-                  à la charte de déontologie de la Fédération Française des Art-Thérapeutes.
+                  à la charte de déontologie de la FFAT (Fédération Française des Art-Thérapeutes).
                 </p>
                 <p>
                   Anciennement cadre en entreprise et comédienne, Nathalie a choisi de se reconvertir : cherchant à
@@ -78,4 +78,4 @@ function APropos() {
   );
 }
 
-export default APropos;
+export default memo(APropos);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Parallax from '../Parallax'
 // import Logo from '../Header/Logo'
 //import Ateliers from "./Ateliers";
@@ -148,4 +148,4 @@ function Accueil() {
   </div>);
 }
 
-export default Accueil;
+export default memo(Accueil);

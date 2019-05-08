@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   ARTALGIE,
   ROUTER,
@@ -53,4 +53,4 @@ function Footer() {
     </footer>);
 }
 
-export default Footer;
+export default memo(Footer);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { LINK_RESEAU } from '../../constants'
 
 function Reseau() {
@@ -52,4 +52,4 @@ function Reseau() {
   );
 }
 
-export default Reseau;
+export default memo(Reseau);

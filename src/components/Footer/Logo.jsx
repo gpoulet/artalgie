@@ -1,9 +1,7 @@
-import React from "react";
-//import { ALGIE, ART } from '../../constants'
+import React, { memo } from "react";
 
 function Logo() {
    return <img src="/images/logo/logo-white.svg" width="180px" alt="Artalgie" />
-  //return [<span key="art" className="art">{ART}</span>,<span key="algie" className="algie">{ALGIE}</span>]
 }
 
-export default Logo;
+export default memo(Logo);

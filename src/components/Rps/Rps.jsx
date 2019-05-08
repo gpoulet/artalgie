@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   RPS_LINKS
 } from '../../constants'
@@ -50,4 +50,4 @@ function Rps() {
     </div>);
 }
 
-export default Rps;
+export default memo(Rps);

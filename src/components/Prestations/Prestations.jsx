@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { LINK_PRESTATIONS } from '../../constants'
 
 function Prestations() {
@@ -63,4 +63,4 @@ function Prestations() {
   );
 }
 
-export default Prestations;
+export default memo(Prestations);

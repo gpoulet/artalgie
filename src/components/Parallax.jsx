@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { string, node } from 'prop-types';
 import Parallax from 'react-scroll-parallax/lib/components/Parallax';
 
@@ -22,4 +22,4 @@ HeroBanner.propTypes = {
   children: node
 }
 
-export default HeroBanner;
+export default memo(HeroBanner);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { LINK_ART_THERAPIE } from '../../constants'
 
 function ArtTherapie() {
@@ -43,4 +43,4 @@ function ArtTherapie() {
   );
 }
 
-export default ArtTherapie;
+export default memo(ArtTherapie);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { LINK_MENTIONS_LEGALES } from '../../constants'
 
 function LinkArtalgie() {
@@ -222,4 +222,4 @@ function MentionsLegales() {
   );
 }
 
-export default MentionsLegales;
+export default memo(MentionsLegales);

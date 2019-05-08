@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faMusic,
@@ -58,4 +58,4 @@ function Ateliers() {
   );
 }
 
-export default Ateliers;
+export default memo(Ateliers);
