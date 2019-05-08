@@ -6,7 +6,7 @@ function Contact() {
     <div className="row">
       <div className="col s12">
         <div className="card">
-          <div className="card-content">
+          <div className="card-content contact-card-content">
             <span className="card-title">{LINK_CONTACT}</span>
             <p className="valign-wrapper"><i className="material-icons contact">phone</i>
               Téléphone :&nbsp;
