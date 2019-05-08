@@ -1,4 +1,13 @@
 import React from "react";
+import {
+  ANACT_LINK,
+  AMELI_LINK,
+  INRS_LINK,
+  MINISTERE_TRAVAIL_LINK,
+  MINISTERE_TRAVAIL,
+  ANACT,
+  AMELI, INRS
+} from '../../constants'
 
 function Rps() {
   return (
@@ -33,16 +42,14 @@ function Rps() {
               Pour plus d'informations, je vous recommande ces lectures :</p>
             <p>
               <a
-                href="https://travail-emploi.gouv.fr/sante-au-travail/prevention-des-risques-pour-la-sante-au-travail/article/les-rps-c-est-quoi"
-                target="_blank"
-                rel="noopener noreferrer">Ministère du travail et de l'emploi</a><br/>
-              <a href="https://www.anact.fr/themes/risques-psychosociaux" target="_blank"
-                 rel="noopener noreferrer">Anact (Agence nationale pour l'amélioration des conditions de travail)</a><br/>
-              <a href="https://www.ameli.fr/llle-et-vilaine/entreprise/prevention/risques/risques-psychosociaux"
-                 target="_blank"
-                 rel="noopener noreferrer">Ameli (Assurance maladie)</a><br/>
-              <a href="http://www.inrs.fr/risques/psychosociaux/ce-qu-il-faut-retenir.html" target="_blank"
-                 rel="noopener noreferrer">INRS : Santé et sécurité au travail</a>
+                href={MINISTERE_TRAVAIL_LINK} target="_blank"
+                rel="noopener noreferrer">{MINISTERE_TRAVAIL}</a><br/>
+              <a href={ANACT_LINK} target="_blank"
+                 rel="noopener noreferrer">{ANACT}</a><br/>
+              <a href={AMELI_LINK} target="_blank"
+                 rel="noopener noreferrer">{AMELI}</a><br/>
+              <a href={INRS_LINK} target="_blank"
+                 rel="noopener noreferrer">{INRS}</a>
             </p>
           </div>
         </div>
