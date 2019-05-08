@@ -6,7 +6,8 @@ import {
   ROUTER,
   TELEPHONE,
   ROUTING_MENTIONS_LEGALES,
-  LINK_MENTIONS_LEGALES
+  LINK_MENTIONS_LEGALES,
+  PAGE_FACEBOOK_LINK
 } from '../../constants'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
@@ -27,7 +28,7 @@ function Footer() {
             <p className="footer-text">
               <span className="footer-text-label">Téléphone : </span>{TELEPHONE}<br/>
               <span className="footer-text-label">Adresse e-mail : </span>{EMAIL}<br/>
-              <span className="footer-text-label">Facebook : </span><a href={PAGE_FACEBOOK} target="_blank" rel="noopener noreferrer" className="footer-text">{PAGE_FACEBOOK}</a>
+              <span className="footer-text-label">Facebook : </span><a href={PAGE_FACEBOOK_LINK} target="_blank" rel="noopener noreferrer" className="footer-text">{PAGE_FACEBOOK}</a>
             </p>
           </div>
           <div className="col l4 offset-l2 s12">
