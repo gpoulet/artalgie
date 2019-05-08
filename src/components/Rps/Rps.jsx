@@ -1,13 +1,13 @@
 import React from "react";
 import {
-  ANACT_LINK,
-  AMELI_LINK,
-  INRS_LINK,
-  MINISTERE_TRAVAIL_LINK,
-  MINISTERE_TRAVAIL,
-  ANACT,
-  AMELI, INRS
+  RPS_LINKS
 } from '../../constants'
+
+function RpsLink({ link, label, image }) {
+  return (
+    <a href={link}><img src={image} alt={label}/></a>
+  )
+}
 
 function Rps() {
   return (
@@ -40,17 +40,10 @@ function Rps() {
             <br/>
             <p>
               Pour plus d'informations, je vous recommande ces lectures :</p>
-            <p>
-              <a
-                href={MINISTERE_TRAVAIL_LINK} target="_blank"
-                rel="noopener noreferrer">{MINISTERE_TRAVAIL}</a><br/>
-              <a href={ANACT_LINK} target="_blank"
-                 rel="noopener noreferrer">{ANACT}</a><br/>
-              <a href={AMELI_LINK} target="_blank"
-                 rel="noopener noreferrer">{AMELI}</a><br/>
-              <a href={INRS_LINK} target="_blank"
-                 rel="noopener noreferrer">{INRS}</a>
-            </p>
+
+            <div className="rps-links">
+              {RPS_LINKS.map((item, index) => <RpsLink key={index} {...item} />)}
+            </div>
           </div>
         </div>
       </div>
