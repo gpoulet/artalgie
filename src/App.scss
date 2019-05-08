@@ -288,18 +288,23 @@ footer.page-footer {
   color: $accent-color;
 }
 
-.button-amber, .button-amber:hover {
-  background-color: $amber;
+.button-purple, .button-purple:hover {
+  background-color: $purple;
   color: $white;
 }
 
-.button-green, .button-green:hover {
-  background-color: $green;
+.button-blue, .button-blue:hover {
+  background-color: $blue-post-it;
   color: $white;
 }
 
-.button-red, .button-red:hover {
-  background-color: $red;
+.button-pink, .button-pink:hover {
+  background-color: $pink-scotch;
+  color: $white;
+}
+
+.button-yellow, .button-yellow:hover {
+  background-color: $yellow-post-it;
   color: $white;
 }
 

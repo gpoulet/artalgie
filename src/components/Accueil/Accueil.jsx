@@ -38,7 +38,7 @@ function Accueil() {
         <p className="accueil-text">Vous ne savez pas ce qu'est l'art-thérapie ?</p>
         <p className="accueil-text">Vous êtes curieux, vous voulez en savoir plus...</p>
         <Link to={ROUTING_ART_THERAPIE}
-              className="waves-effect waves-light btn button-amber">
+              className="waves-effect waves-light btn button-purple">
           <i className="material-icons left">{ICON_ART_THERAPIE}</i>
           {LINK_ART_THERAPIE}
         </Link>
@@ -57,7 +57,7 @@ function Accueil() {
           œuvre d'interventions auprès de vos salariés.
         </p>
         <Link to={ROUTING_CONTACT}
-              className="waves-effect waves-light btn button-green">
+              className="waves-effect waves-light btn button-blue">
           <i className="material-icons left">{ICON_CONTACT}</i>
           {LINK_CONTACT}
         </Link>
@@ -74,7 +74,7 @@ function Accueil() {
 
         <p className="accueil-text">Les RPS c'est quoi ? On vous éclaire….</p>
         <Link to={ROUTING_RPS}
-              className="waves-effect waves-light btn button-red">
+              className="waves-effect waves-light btn button-yellow">
           <i className="material-icons left">{ICON_RPS}</i>
           {LINK_RPS}
         </Link>
@@ -89,7 +89,7 @@ function Accueil() {
 
         <p className="accueil-text">Vous voulez en savoir plus sur les prestations, et les modalités d'intervention...</p>
         <Link to={ROUTING_PRESTATIONS}
-              className="waves-effect waves-light btn button-amber">
+              className="waves-effect waves-light btn button-purple">
           <i className="material-icons left">{ICON_PRESTATIONS}</i>
           {LINK_PRESTATIONS}
         </Link>
@@ -103,7 +103,7 @@ function Accueil() {
         <p className="accueil-text">C'est quoi ? c'est qui ?</p>
 
         <Link to={ROUTING_A_PROPOS}
-              className="waves-effect waves-light btn button-green">
+              className="waves-effect waves-light btn button-blue">
           <i className="material-icons left">{ICON_A_PROPS}</i>
           {LINK_A_PROPOS}
         </Link>
@@ -119,7 +119,7 @@ function Accueil() {
 
         <p className="accueil-text">Des partenaires, des professionnels, des rencontres, des amis…</p>
         <Link to={ROUTING_RESEAU}
-              className="waves-effect waves-light btn button-red">
+              className="waves-effect waves-light btn button-pink">
           <i className="material-icons left">{ICON_RESEAU}</i>
           {LINK_RESEAU}
         </Link>
