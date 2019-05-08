@@ -132,7 +132,7 @@ function Accueil() {
     {/*<div className="row">*/}
       {/*<div className="col s12">*/}
         {/*/!*<p className="brand-logo"><Logo/></p>*!/*/}
-        {/*<p><span className="accueil-text">ARTalgie propose des sessions d'art-thérapie en entreprise pour prévenir et lutter contre les risques*/}
+        {/*<p><span className="accueil-text">Artalgie propose des sessions d'art-thérapie en entreprise pour prévenir et lutter contre les risques*/}
         {/*psychosociaux, et notamment l'épuisement professionnel.</span>*/}
         {/*</p>*/}
       {/*</div>*/}

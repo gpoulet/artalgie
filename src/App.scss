@@ -53,6 +53,7 @@ $promo-text-info: $dark-grey;
 
 $roboto: Roboto, sans-serif;
 $blogger: BloggerSans, Roboto, sans-serif;
+$product-sans: 'Product Sans', Roboto, sans-serif;
 $font-menu: $roboto;
 $font-footer-title: $blogger;
 $font-footer: $roboto;
@@ -143,8 +144,8 @@ ul.sidenav > li > a.active {
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a.active {
- // border-radius: 10px;
- // border-bottom-color: $purple;
+  // border-radius: 10px;
+  // border-bottom-color: $purple;
   background-color: $white;
   font-weight: 600;
   font-size: 1rem;
@@ -159,7 +160,7 @@ nav .nav-wrapper > ul#nav-mobile > li > a.active {
 }
 
 .brand-logo {
-  font-family: 'Product Sans', Roboto, sans-serif;
+  font-family: $product-sans;
   font-size: 2.1rem;
 }
 
@@ -242,9 +243,10 @@ footer.page-footer {
   color: $card-title;
   font-weight: $card-title-weight;
   font-family: $blogger;
+  font-size: 1.8em;
 }
 
-.accueil>.hero-container {
+.accueil > .hero-container {
   height: 40rem;
 }
 
@@ -252,7 +254,7 @@ footer.page-footer {
   font-family: $blogger;
 }
 
-.a-propos>.hero-container {
+.a-propos > .hero-container {
   height: 60rem;
 }
 
@@ -332,6 +334,7 @@ footer.page-footer {
   font-weight: 500;
   line-height: 2.5;
 }
+
 .contact-card-content > p > i {
   color: $yellow-post-it;
 }
@@ -368,4 +371,54 @@ footer.page-footer {
 .rps-links > a > img {
   max-width: 220px;
   max-height: 220px;
+}
+
+.sessions {
+  padding: 20px;
+}
+
+.sessions > div > div.card.card-content {
+  padding: 20px;
+}
+.sessions > div > div {
+  font-family: $product-sans;
+  font-size: 1.1em;
+  vertical-align: middle;
+  //margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+  .sessions > div > div {
+    min-height: 150px !important;
+  }
+}
+
+.sessions > div:nth-child(6n+1) > div {
+  background-color: $grey-purple-scotch;
+}
+
+.sessions > div:nth-child(6n+2) > div {
+  background-color: $pink-scotch;
+}
+
+.sessions > div:nth-child(6n+3) > div{
+  background-color: $yellow-post-it;
+}
+
+.sessions > div:nth-child(6n+4) > div {
+  background-color: $green;
+}
+
+.sessions > div:nth-child(6n+5) > div {
+  background-color: $blue-post-it;
+}
+
+.sessions > div:nth-child(6n) > div{
+  background-color: $beige;
+}
+
+.subtitle-prestations {
+  font-size: 1.5em;
+  font-family: $blogger;
+  color: $blue;
 }

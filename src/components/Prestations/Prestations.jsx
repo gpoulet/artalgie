@@ -1,5 +1,6 @@
 import React, { memo } from "react";
-import { LINK_PRESTATIONS } from '../../constants'
+import { ARTALGIE, LINK_PRESTATIONS, SESSIONS_CURATIF, SESSIONS_PREVENTION } from "../../constants";
+import Sessions from "./Sessions";
 
 function Prestations() {
   return (
@@ -8,54 +9,42 @@ function Prestations() {
         <div className="card">
           <div className="card-content">
             <span className="card-title">{LINK_PRESTATIONS}</span>
-            <p>ARTalgie intervient de manière innovante sur deux plans dans votre entreprise : préventif et/ou curatif.</p>
+            <p>{ARTALGIE} intervient de manière innovante sur deux plans dans votre entreprise : <b>préventif</b> et/ou <b>curatif</b>.</p>
             <p>
               L'innovation tient dans l'approche art-thérapeutique : elle se veut à l'écoute de chaque participant, et
               dans un parcours actif basé sur les <u>sens</u>.
             </p>
             <br/>
+            <p className="subtitle-prestations">Prévention</p>
             <p>
-              En <u>prévention</u>, pour améliorer la Qualité de Vie au Travail, ARTalgie propose des sessions comme
+              En <u>prévention</u>, pour améliorer la Qualité de Vie au Travail, {ARTALGIE} propose des sessions comme
               suit :
             </p>
+            <Sessions sessions={SESSIONS_PREVENTION} />
+            <p className="subtitle-prestations">Curatif</p>
             <p>
-              - Mieux se connaître pour mieux travailler avec les autres<br/>
-              - Prendre la parole en public<br/>
-              - Prévenir le stress en milieu professionnel<br/>
-              - La confiance en soi<br/>
-              - La cohésion d'équipe<br/>
-              - Accueillir de nouveaux arrivants dans une équipe
-            </p>
-            <br/>
-            <p>
-              En <u>aide</u>, ARTalgie peut intégrer votre plan d'actions contenu dans le document unique, ou suite à un
+              En <u>aide</u>, {ARTALGIE} peut intégrer votre plan d'actions contenu dans le document unique, ou suite à un
               diagnostic de risques. Les sessions proposées pourront alors s'intituler :
             </p>
+           <Sessions sessions={SESSIONS_CURATIF} />
+            <p className="subtitle-prestations">Outils</p>
             <p>
-              - L'écoute dans le groupe<br/>
-              - La communication dans le groupe<br/>
-              - Dépasser les conflits<br/>
-              - L'estime de soi<br/>
-              - Décompressez, créez<br/>
-              - Lâcher-prise
+              Plusieurs outils art-thérapeutiques peuvent être envisagés et mixés : <i>théâtre</i>, <i>danse</i>, <i>
+              peinture</i>, <i>terre</i>, <i>dessin</i>, <i>collage</i>, <i>gravure</i>, <i>relaxation</i>.
+              Ils seront adaptés aux choix et aux besoins.
             </p>
             <br/>
+            <p className="subtitle-prestations">Tarifs</p>
             <p>
-              Plusieurs outils art-thérapeutiques peuvent être envisagés et mixés : théâtre, danse, peinture, terre,
-              dessin, collage, gravure, relaxation. Ils seront adaptés aux choix et aux besoins.
-            </p>
-            <br/>
-            <p>
-              Les interventions se font dans vos locaux par demi-journée, pour des groupes de maximum 10 personnes. Le
+              Les interventions se font <b>dans vos locaux</b> par <b>demi-journée</b>, pour des groupes de <b>maximum 10 personnes</b>. Le
               matériel spécifique est fourni.
             </p>
-            <p>Le tarif de base est fixé à 800€ pour une demi-journée.
-            </p>
-            <p> Il ne comprend pas les frais de déplacement, ou une éventuelle location de salle. Un devis sur mesure
-              sera établi selon vos besoins.
+            <br/>
+            <p>Le tarif de base est fixé à <b>800€</b> pour une demi-journée.
+            Il ne comprend pas les frais de déplacement, ou une éventuelle location de salle.
             </p>
             <br/>
-            <p><b>Un devis sur mesure sera établi pour répondre à vos spécificités.</b></p>
+            <p>Un devis <u>sur mesure</u> sera établi pour répondre à vos spécificités.</p>
           </div>
         </div>
       </div>

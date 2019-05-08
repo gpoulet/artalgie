@@ -1,9 +1,9 @@
 import React, { memo } from "react";
-import { LINK_MENTIONS_LEGALES } from '../../constants'
+import { ARTALGIE, LINK_MENTIONS_LEGALES } from '../../constants'
 
 function LinkArtalgie() {
   return <a href="http://artalgie.fr" target="_blank"
-            rel="noopener noreferrer">ARTalgie.fr</a>
+            rel="noopener noreferrer">{ARTALGIE}.fr</a>
 }
 
 function MentionsLegales() {
