@@ -8,7 +8,7 @@ function APropos() {
         <span className="card-title">{LINK_A_PROPOS}</span>
         <div className="row">
           <div className="col m4 push-m8 l3 push-l9 xl2 push-xl10 intervenante">
-            <img className="responsive-img circle" src="/images/intervenante.jpg"/>
+            <img className="responsive-img circle" src="/images/intervenante.jpg" alt="L'intervenante"/>
             <p className="center-align">Nathalie POULET-GUILBERT</p>
           </div>
           <div className="col m8 pull-m4 l9 pull-l3 xl10 pull-xl2">
