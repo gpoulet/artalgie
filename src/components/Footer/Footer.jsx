@@ -37,6 +37,7 @@ function Footer() {
             </div>
           </div>
           <div className="col l4 offset-l2 s12">
+            <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="footer-title">Liens</div>
             <ul className="footer-text">
               {ROUTER.map(LinkFooter)}

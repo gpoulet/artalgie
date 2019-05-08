@@ -199,8 +199,9 @@ footer.page-footer {
 
 .footer-title {
   color: $footer-text-title;
-  font-family: $font-footer;
-  font-size: 1.8rem;
+  font-family: $font-footer-title;
+  font-size: 2.2rem;
+  margin-bottom: -10px;
 }
 
 .footer-link {
