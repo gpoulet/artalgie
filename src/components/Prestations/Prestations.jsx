@@ -34,6 +34,7 @@ function Prestations() {
               Ils seront adaptés aux choix et aux besoins.
             </p>
             <br/>
+            <br/>
             <p className="subtitle-prestations">Tarifs</p>
             <p>
               Les interventions se font <b>dans vos locaux</b> par <b>demi-journée</b>, pour des groupes de <b>maximum 10 personnes</b>. Le
