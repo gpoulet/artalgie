@@ -28,15 +28,19 @@ function Footer() {
     <footer className="page-footer">
       <div className="container">
         <div className="row">
-          <div className="col l6 s12">
+          <div className="col s12 l4 xl4">
             <div className="brand-logo">
               <Logo/>
             </div>
+          </div>
+          <div className="col s12 l6 xl6">
+            <div className="show-on-small hide-on-large-only"><br/></div>
+            <div className="footer-title">Contact</div>
             <div className="footer-contact">
               {CONTACTS.map((contact, index) => <Field key={index} {...contact}/>)}
             </div>
           </div>
-          <div className="col l4 offset-l2 s12">
+          <div className="col s12 l2 xl2">
             <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="footer-title">Liens</div>
             <ul className="footer-text">
