@@ -1,19 +1,23 @@
 import React from "react";
 import {
   ARTALGIE,
-  PAGE_FACEBOOK,
-  EMAIL,
   ROUTER,
-  TELEPHONE,
   ROUTING_MENTIONS_LEGALES,
   LINK_MENTIONS_LEGALES,
-  PAGE_FACEBOOK_LINK, TELEPHONE_LINK, EMAIL_LINK
+  CONTACTS
 } from '../../constants'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
 
 function LinkFooter({ routing, link }) {
   return <li key={routing}><Link className="footer-text" to={routing}>{link}</Link></li>
+}
+
+
+function Field({ label, link, value }) {
+  return (
+    <p><span>{label}&nbsp;:&nbsp;</span><a href={link}>{value}</a></p>
+  );
 }
 
 function Footer() {
@@ -25,11 +29,9 @@ function Footer() {
             <div className="brand-logo">
               <Logo/>
             </div>
-            <p className="footer-contact">
-              <span>Téléphone : </span><a href={TELEPHONE_LINK}>{TELEPHONE}</a><br/>
-              <span>Adresse e-mail : </span><a href={EMAIL_LINK}>{EMAIL}</a><br/>
-              <span>Facebook : </span><a href={PAGE_FACEBOOK_LINK} target="_blank" rel="noopener noreferrer">{PAGE_FACEBOOK}</a>
-            </p>
+            <div className="footer-contact">
+              {CONTACTS.map((contact, index) => <Field key={index} {...contact}/>)}
+            </div>
           </div>
           <div className="col l4 offset-l2 s12">
             <div className="footer-title">Liens</div>

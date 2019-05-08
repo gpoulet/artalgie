@@ -332,11 +332,15 @@ footer.page-footer {
   line-height: 2.5;
 }
 
-.footer-contact > span {
+.footer-contact {
+  line-height: 0.5;
+}
+
+.footer-contact > p > span {
   color: $black;
 }
 
-.footer-contact > a {
+.footer-contact > p > a {
   color: $purple;
   font-weight: 500;
 }
