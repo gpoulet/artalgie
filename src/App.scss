@@ -25,6 +25,7 @@ $yellow-post-it: #E5BA6A;
 $pink-scotch: #D09587;
 $blue-post-it: #70ACB0;
 $grey-purple-scotch: #B3A8B4;
+$white-grey: #efefef;
 
 $primary-color: $beige;
 $accent-color: $purple;
@@ -324,23 +325,30 @@ footer.page-footer {
 
 .material-icons.contact {
   margin: 0 10px 0 0;
-  color: $yellow-post-it;
+  //color: $yellow-post-it;
 }
 
 .contact-card-content > p > a {
   font-weight: 500;
   line-height: 2.5;
 }
-
-.footer-contact {
-  line-height: 0.5;
+.contact-card-content > p > i {
+  color: $yellow-post-it;
 }
 
-.footer-contact > p > span {
+.footer-contact {
+  line-height: 1;
+}
+
+.footer-contact > p {
   color: $black;
 }
 
 .footer-contact > p > a {
   color: $purple;
   font-weight: 500;
+}
+
+.footer-contact > p > i {
+  color: $white-grey;
 }
