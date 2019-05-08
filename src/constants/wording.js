@@ -17,3 +17,21 @@ export const AMELI = "Ameli (Assurance maladie)";
 export const AMELI_LINK = "https://www.ameli.fr/llle-et-vilaine/entreprise/prevention/risques/risques-psychosociaux";
 export const INRS = "INRS : Santé et sécurité au travail";
 export const INRS_LINK = "http://www.inrs.fr/risques/psychosociaux/ce-qu-il-faut-retenir.html";
+
+export const CONTACTS = [{
+  icon: 'phone',
+  label: "Téléphone",
+  link: TELEPHONE_LINK,
+  value: TELEPHONE
+},{
+  icon: 'email',
+  label: 'Adresse e-mail',
+  link: EMAIL_LINK,
+  value: EMAIL
+},{
+  icon: 'thumb_up',
+  label: 'Facebook',
+  link: PAGE_FACEBOOK_LINK,
+  value: PAGE_FACEBOOK
+}
+]
