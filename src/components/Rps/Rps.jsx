@@ -5,7 +5,7 @@ import {
 
 function RpsLink({ link, label, image }) {
   return (
-    <a href={link}><img src={image} alt={label}/></a>
+    <a href={link} target="_blank" rel="noopener noreferrer"><img src={image} alt={label}/></a>
   )
 }
 
