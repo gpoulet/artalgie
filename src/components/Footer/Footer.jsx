@@ -14,11 +14,11 @@ function LinkFooter({ routing, link }) {
 }
 
 
-function Field({ icon, label, link, value }) {
+function Field({ icon, label, link, value, target }) {
   return (
     <p className="valign-wrapper"><i className="material-icons contact">{icon}</i>
       {label}&nbsp;:&nbsp;
-      <a href={link} className="truncate">{value}</a>
+      <a href={link} target={target} className="truncate">{value}</a>
     </p>
   );
 }

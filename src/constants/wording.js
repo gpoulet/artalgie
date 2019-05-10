@@ -43,17 +43,20 @@ export const CONTACTS = [{
   icon: 'phone',
   label: "Téléphone",
   link: TELEPHONE_LINK,
-  value: TELEPHONE
+  value: TELEPHONE,
+  target: "_self"
 }, {
   icon: 'email',
   label: 'Adresse e-mail',
   link: EMAIL_LINK,
-  value: EMAIL
+  value: EMAIL,
+  target: "_self"
 }, {
   icon: 'thumb_up',
   label: 'Facebook',
   link: PAGE_FACEBOOK_LINK,
-  value: PAGE_FACEBOOK
+  value: PAGE_FACEBOOK,
+  target: "_blank"
 }
 ]
 
