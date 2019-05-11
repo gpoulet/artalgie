@@ -43,7 +43,7 @@ function Footer() {
           <div className="col s12 l2 xl2">
             <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="footer-title">Liens</div>
-            <ul className="footer-text">
+            <ul className="footer-text footer-links">
               {ROUTER.map(LinkFooter)}
             </ul>
           </div>
