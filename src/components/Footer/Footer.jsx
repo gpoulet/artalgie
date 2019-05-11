@@ -36,6 +36,7 @@ function Footer() {
           </div>
           <div className="col s12 l6 xl6">
             <div className="show-on-small hide-on-large-only"><br/></div>
+            <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="footer-title">Contact</div>
             <div className="footer-contact">
               {CONTACTS.map((contact, index) => <Field key={index} {...contact}/>)}
@@ -44,7 +45,7 @@ function Footer() {
           <div className="col s12 l2 xl2">
             <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="footer-title">Liens</div>
-            <ul className="footer-text footer-links">
+            <ul className="footer-text">
               {ROUTER.map(LinkFooter)}
             </ul>
           </div>
