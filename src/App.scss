@@ -340,6 +340,19 @@ ul.footer-links {
   text-align: center;
 }
 
+.white-square-footer {
+  border-radius: 0.6em;
+  color: $purple;
+  background-color: $white-grey;
+  font-family: $product-sans;
+  text-transform: uppercase;
+  padding: 0.5em;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+
 .intervenante {
   margin-bottom: 30px;
 }

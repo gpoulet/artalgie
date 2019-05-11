@@ -32,6 +32,7 @@ function Footer() {
             <div className="brand-logo">
               <Logo/>
             </div>
+            <span className="white-square-footer">Art-thérapie en entreprise</span>
           </div>
           <div className="col s12 l6 xl6">
             <div className="show-on-small hide-on-large-only"><br/></div>
