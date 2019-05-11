@@ -328,10 +328,11 @@ footer.page-footer {
   border-radius: 0.6em;
   color: $purple;
   background-color: $white;
-  font-family: $blogger;
-  padding: 0.6em 0.5em 0 0.5em;
-  font-weight: 500;
-  font-size: 1.7rem;
+  font-family: $product-sans;
+  text-transform: uppercase;
+  padding: 0.5em;
+  font-weight: 600;
+  font-size: 1.3rem;
   text-align: center;
 }
 
