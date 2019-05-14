@@ -119,7 +119,7 @@ function Accueil() {
 
         <p className="accueil-text">Des partenaires, des professionnels, des rencontres, des amis…</p>
         <Link to={ROUTING_RESEAU}
-              className="waves-effect waves-light btn button-pink">
+              className="waves-effect waves-light btn button-brown">
           <i className="material-icons left">{ICON_RESEAU}</i>
           {LINK_RESEAU}
         </Link>
