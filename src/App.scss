@@ -20,6 +20,7 @@ $green: #81c784;
 $purple: #a3437a;
 //$beige: #D0C3BD;
 $beige: #d2c2bb;
+$beige-light: #f7f5f3;
 //$beige: #d5c1b8;
 //$yellow-post-it: #f2ab00
 $yellow: #ffc548;
@@ -465,4 +466,16 @@ footer.page-footer {
   font-size: 1.5em;
   font-family: $blogger;
   color: $blue;
+}
+
+.beige-light {
+  background-color: $beige-light;
+}
+
+.yellow-post-it {
+  background-color: $yellow-post-it;
+}
+
+.row-accueil {
+  margin-bottom: 0;
 }

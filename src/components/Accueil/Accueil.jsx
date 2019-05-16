@@ -28,7 +28,7 @@ function Accueil() {
       </div>
     </Parallax>
 
-    <div className="row white">
+    <div className="row row-accueil white">
       <div className="col s12 center-align">
         {/*<i className="medium material-icons blue-text">{ICON_ART_THERAPIE}</i>*/}
         <h4 className="accueil-title">
@@ -46,7 +46,7 @@ function Accueil() {
       </div>
     </div>
 
-    <div className="row">
+    <div className="row row-accueil beige-light">
       <div className="col s12 center-align">
        <h4 className="accueil-title">
           Une étude personnalisée de vos besoins ?</h4>
@@ -65,7 +65,7 @@ function Accueil() {
       </div>
     </div>
 
-    <div className="row white">
+    <div className="row row-accueil white">
       <div className="col s12 center-align">
        <h4 className="accueil-title">
           {ARTALGIE} propose des sessions d'art-thérapie en entreprise pour prévenir et lutter contre les risques
@@ -83,7 +83,7 @@ function Accueil() {
     </div>
 
 
-    <div className="row">
+    <div className="row row-accueil beige-light">
       <div className="col s12 center-align">
        <h4 className="accueil-title">{ARTALGIE}, c'est un concept innovant, pour des interventions sur mesure.</h4>
 
@@ -97,7 +97,7 @@ function Accueil() {
       </div>
     </div>
 
-    <div className="row white">
+    <div className="row row-accueil white">
       <div className="col s12 center-align">
        <h4 className="accueil-title">{ARTALGIE}</h4>
         <p className="accueil-text">C'est quoi ? c'est qui ?</p>
@@ -113,7 +113,7 @@ function Accueil() {
 
 
 
-    <div className="row">
+    <div className="row row-accueil beige-light">
       <div className="col s12 center-align">
        <h4 className="accueil-title">{ARTALGIE} vous recommande.</h4>
 
