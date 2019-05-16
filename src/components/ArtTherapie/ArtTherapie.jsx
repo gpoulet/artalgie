@@ -7,24 +7,28 @@ function ArtTherapie() {
         <div className="card">
           <div className="card-content">
             <span className="card-title">{LINK_ART_THERAPIE}</span>
-            <p>L'art-thérapie est une forme de psychothérapie qui utilise la création artistique à des fins
-              thérapeutiques
-              ou de développement personnel.
+            <p>L'art-thérapie est une forme de psychothérapie qui utilise la <b>création artistique</b> à des <b>fins
+              thérapeutiques</b> ou de <b>développement personnel</b>.
               Le but n'est pas esthétique. Il n'y a pas non plus d'interprétation des œuvres.</p>
-            <p>Il s'agit ici avant tout de s'attacher au processus créatif, processus qui met en mouvement le corps, la
-              pensée, l'imagination, les émotions. Le geste créateur va alors insuffler un élan porteur de changement et
-              de sens.
-              L'art-thérapie est utilisée auprès de publics variés, de tous âges et toutes pathologies. Elle permet
-              d'aider à de nombreux niveaux : stress, anxiété, confiance en soi, estime de soi…
+            <p>Il s'agit ici avant tout de s'attacher au <b>processus créatif</b>, processus qui met en mouvement
+              le <b>corps</b>,
+              la <b>pensée</b>, <b>l'imagination</b>, les <b>émotions</b>. Le geste créateur va alors insuffler un
+              élan porteur de changement et
+              de sens.</p>
+            <p>L'art-thérapie est utilisée auprès de publics variés, de tous âges et toutes pathologies.</p>
+            <p>Elle permet
+              d'aider à de nombreux niveaux : <i>stress</i>, <i>anxiété</i>, <i>confiance en soi</i>, <i>estime de
+                soi</i>…
             </p>
             <br/>
             <p>
-              L'art-thérapeute, selon sa formation, exploite une ou plusieurs techniques artistiques (peinture, dessin,
-              collage, sculpture, danse, théâtre, céramique, musique, etc.) pour aider toute personne rencontrant des
-              difficultés tant physiques, psychiques que socio-relationnelles.
+              L'art-thérapeute, selon sa formation, exploite une ou plusieurs <b>techniques artistiques</b> (
+              <i>peinture</i>, <i>dessin</i>, <i>collage</i>, <i>sculpture</i>, <i>danse</i>, <i>théâtre</i>
+              , <i>céramique</i> <i>musique</i>, etc.) pour <u>aider</u> toute personne rencontrant
+              des difficultés tant physiques, psychiques que socio-relationnelles.
             </p>
             <p>
-              Son travail se base sur l'expression, la communication et la relation.
+              Son travail se base sur l&apos;<b>expression</b>, la <b>communication</b> et la <b>relation</b>.
             </p>
             <br/>
 
