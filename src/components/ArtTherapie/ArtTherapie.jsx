@@ -1,5 +1,15 @@
 import React, { memo } from "react";
-import { LINK_ART_THERAPIE } from '../../constants'
+import { LINK_ART_THERAPIE, ART_THERAPIE_LINKS } from '../../constants'
+
+function Link({ link, label, image }) {
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <img height="200px" src={image} alt={label}/>
+      <br/>
+      {label}
+    </a>
+  )
+}
 
 function ArtTherapie() {
   return (<div className="row">
@@ -33,13 +43,10 @@ function ArtTherapie() {
             <br/>
 
             <p>Vous voulez en savoir d’avantage :</p>
-            <p>
-              <a href="https://fr.wikipedia.org/wiki/Art-thérapie" target="_blank"
-                 rel="noopener noreferrer">Définition de l'art-thérapie sur Wikipedia</a>
-              <br/>
-              <a href="http://ffat-federation.org" target="_blank"
-                 rel="noopener noreferrer">FFAT (Fédération française des art-thérapeutes)</a>
-            </p>
+
+            <div className="arttherapie-links">
+              {ART_THERAPIE_LINKS.map((item, index) => <Link key={index} {...item} />)}
+            </div>
           </div>
         </div>
       </div>

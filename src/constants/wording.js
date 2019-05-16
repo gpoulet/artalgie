@@ -11,6 +11,12 @@ export const LINKEDIN = LINKEDIN_LINK;
 
 export const SITE_NATHALIE = "http://www.nathaliepoulet.com"
 
+export const ART_THERAPIE_WIKIPEDIA = "Définition de l'art-thérapie sur Wikipedia";
+export const ART_THERAPIE_WIKIPEDIA_LINK = "https://fr.wikipedia.org/wiki/Art-thérapie";
+
+export const FFAT = "FFAT (Fédération française des art-thérapeutes)";
+export const FFAT_LINK = "http://ffat-federation.org";
+
 export const MINISTERE_TRAVAIL = "Ministère du travail et de l'emploi";
 export const MINISTERE_TRAVAIL_LINK = "https://travail-emploi.gouv.fr/sante-au-travail/prevention-des-risques-pour-la-sante-au-travail/article/les-rps-c-est-quoi";
 export const ANACT = "Anact (Agence nationale pour l'amélioration des conditions de travail)";
@@ -96,3 +102,15 @@ export const OUTILS_THERAPEUTIQUES = [
   "gravure",
   "relaxation"
 ];
+
+export const ART_THERAPIE_LINKS = [
+  {
+    label: ART_THERAPIE_WIKIPEDIA,
+    link: ART_THERAPIE_WIKIPEDIA_LINK,
+    image: "/images/arttherapie/wikipedia.png"
+  },
+  {
+    label: FFAT,
+    link: FFAT_LINK,
+    image: "/images/arttherapie/ffat.png"
+  }]
