@@ -12,7 +12,7 @@ function Link({ link, label, image }) {
 }
 
 function ArtTherapie() {
-  return (<div className="row">
+  return (<div className="row no-margin-bottom">
       <div className="col s12">
         <div className="card">
           <div className="card-content">

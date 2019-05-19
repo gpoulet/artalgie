@@ -20,7 +20,7 @@ function Link({ link, label, image }) {
 
 function APropos() {
   return (
-    <div className="row">
+    <div className="row no-margin-bottom">
       <div className="col s12">
         <div className="card">
           <div className="card-content a-propos">

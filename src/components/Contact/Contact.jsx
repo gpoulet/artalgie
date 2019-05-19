@@ -15,7 +15,7 @@ function Field({ icon, label, link, value, target }) {
 
 function Contact() {
   return (
-    <div className="row">
+    <div className="row no-margin-bottom">
       <div className="col s12">
         <div className="card horizontal hide-on-med-and-down">
           <div className="card-stacked">
