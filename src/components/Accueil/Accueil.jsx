@@ -37,6 +37,7 @@ function Accueil() {
 
         <p className="accueil-text">Vous ne savez pas ce qu'est l'art-thérapie ?</p>
         <p className="accueil-text">Vous êtes curieux, vous voulez en savoir plus...</p>
+        <br/>
         <Link to={ROUTING_ART_THERAPIE}
               className="waves-effect waves-light btn button-blue-light">
           <i className="material-icons left">{ICON_ART_THERAPIE}</i>
@@ -56,6 +57,7 @@ function Accueil() {
         <p className="accueil-text"> Elle vous accompagne dans les étapes de l'expression de votre besoin à la mise en
           œuvre d'interventions auprès de vos salariés.
         </p>
+        <br/>
         <Link to={ROUTING_CONTACT}
               className="waves-effect waves-light btn button-purple">
           <i className="material-icons left">{ICON_CONTACT}</i>
@@ -73,6 +75,7 @@ function Accueil() {
 
 
         <p className="accueil-text">Les RPS c'est quoi ? On vous éclaire….</p>
+        <br/>
         <Link to={ROUTING_RPS}
               className="waves-effect waves-light btn button-pink">
           <i className="material-icons left">{ICON_RPS}</i>
@@ -88,6 +91,7 @@ function Accueil() {
        <h4 className="accueil-title">{ARTALGIE}, c'est un concept innovant, pour des interventions sur mesure.</h4>
 
         <p className="accueil-text">Vous voulez en savoir plus sur les prestations, et les modalités d'intervention...</p>
+        <br/>
         <Link to={ROUTING_PRESTATIONS}
               className="waves-effect waves-light btn button-yellow">
           <i className="material-icons left">{ICON_PRESTATIONS}</i>
@@ -101,7 +105,7 @@ function Accueil() {
       <div className="col s12 center-align">
        <h4 className="accueil-title">{ARTALGIE}</h4>
         <p className="accueil-text">C'est quoi ? c'est qui ?</p>
-
+        <br/>
         <Link to={ROUTING_A_PROPOS}
               className="waves-effect waves-light btn button-grey-purple">
           <i className="material-icons left">{ICON_A_PROPS}</i>
@@ -118,6 +122,7 @@ function Accueil() {
        <h4 className="accueil-title">{ARTALGIE} vous recommande.</h4>
 
         <p className="accueil-text">Des partenaires, des professionnels, des rencontres, des amis…</p>
+        <br/>
         <Link to={ROUTING_RESEAU}
               className="waves-effect waves-light btn button-brown">
           <i className="material-icons left">{ICON_RESEAU}</i>
