@@ -20,7 +20,7 @@ function Accueil() {
     <Parallax
       min={'-20%'}
       max={'20%'}
-      image="images/accueil.jpg"
+      image="images/accueil5.jpg"
     >
       <div>
         <img src="/images/logo/logo-white.svg" width="300px" alt="Artalgie" />
