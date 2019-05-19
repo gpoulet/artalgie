@@ -29,9 +29,9 @@ export const INRS_LINK = "http://www.inrs.fr/risques/psychosociaux/ce-qu-il-faut
 
 export const ARTEEP = "ARTEEP";
 export const ARTEEP_LINK = "http://www.arteep.fr/";
-export const FFAT_CODE_DEONTOLOGIE = "FFAT - Code de déontologie";
+export const FFAT_CODE_DEONTOLOGIE = "Code de déontologie de la FFAT";
 export const FFAT_CODE_DEONTOLOGIE_LINK = "http://ffat-federation.org/ethique";
-export const SMART = "SMART";
+export const SMART = "Coopérative d'entreprises SMART";
 export const SMART_LINK = "https://www.smartfr.fr";
 
 export const RPS_LINKS = [{
