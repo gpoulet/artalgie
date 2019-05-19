@@ -1,5 +1,22 @@
 import React, { memo } from "react";
-import { LINK_A_PROPOS, SITE_NATHALIE, ARTALGIE } from '../../constants'
+import {
+  LINK_A_PROPOS,
+  SITE_NATHALIE,
+  ARTALGIE,
+  A_PROPOS_LINKS,
+  FFAT_CODE_DEONTOLOGIE_LINK,
+  ARTEEP_LINK, SMART_LINK
+} from '../../constants'
+
+function Link({ link, label, image }) {
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <img src={image} alt={label}/>
+      <br/>
+      {label}
+    </a>
+  )
+}
 
 function APropos() {
   return (
@@ -16,59 +33,58 @@ function APropos() {
               <div className="col m8 pull-m4 l9 pull-l3 xl10 pull-xl2">
 
 
-                <p>{ARTALGIE} est dirigée par Nathalie POULET-GUILBERT, art-thérapeute certifiée, formée par ARTEEP,
+                <p>{ARTALGIE} est dirigée par <b>Nathalie POULET-GUILBERT</b>, <b>art-thérapeute certifiée</b>, formée
+                  par <a href={ARTEEP_LINK} target="_blank" rel="noopener noreferrer">ARTEEP</a>,
                   adhérant
-                  à la charte de déontologie de la FFAT (Fédération Française des Art-Thérapeutes).
-                </p>
-                <p>
-                  Anciennement cadre en entreprise et comédienne, Nathalie a choisi de se reconvertir : cherchant à
-                  allier
-                  ses compétences artistiques avec son appétence au soutien, à la relation d'aide révélée par son
-                  expérience
-                  managériale, l'art-thérapie est alors apparue la voie toute tracée.
-                </p>
-                <p>
-                  Après deux années de stage en psychiatrie adultes, Nathalie a effectué une année de spécialisation sur
-                  les
-                  pathologies du travailleur : elle est intervenue en médecine préventive, mais aussi en consultation
-                  douleurs chroniques.
+                  à la <a href={FFAT_CODE_DEONTOLOGIE_LINK} target="_blank" rel="noopener noreferrer">charte de
+                    déontologie de la FFAT</a> (Fédération Française des Art-Thérapeutes).
                 </p>
                 <br/>
                 <p>
-                  Nathalie est également formée à de nombreuses pratiques artistiques : théâtre, danse, peinture,
-                  dessin,
-                  céramique, gravure, photographie. Vous pouvez retrouver son parcours artistique sur son site internet
+                  Anciennement <b>cadre en entreprise</b> et <b>comédienne</b>, Nathalie a choisi de se reconvertir.
+                  Cherchant à
+                  allier
+                  ses <b>compétences artistiques</b> avec son appétence au soutien, à la relation d'aide révélée par
+                  son <b>expérience managériale</b>, l'art-thérapie est alors apparue comme la voie toute tracée.
+                </p>
+                <br/>
+                <p>
+                  Après deux années de stage en psychiatrie adultes, Nathalie a effectué une année de spécialisation sur
+                  les
+                  pathologies du travailleur : elle est intervenue en <i>médecine préventive</i>, mais aussi en <i>consultation
+                  douleurs chroniques</i>.
+                </p>
+                <br/>
+                <p>
+                  Nathalie est également formée à de nombreuses pratiques artistiques : <i>théâtre</i>, <i>danse</i>
+                  , <i>peinture</i>, <i>dessin</i>, <i>céramique</i>, <i>gravure</i>, <i>photographie</i>.
+                  <br/>
+                  Vous pouvez retrouver son <b>parcours artistique</b> sur son site internet
                   : <a
                   href={SITE_NATHALIE} target="_blank" rel="noopener noreferrer">www.nathaliepoulet.com</a>
                 </p>
                 <br/>
                 <p>
-                  Aujourd'hui, elle souhaite proposer son savoir-faire, ses connaissances et son expertise auprès des
+                  Aujourd'hui, elle souhaite proposer son <b>savoir-faire</b>, ses <b>connaissances</b> et
+                  son <b>expertise</b> auprès des
                   entreprises pour leur permettre d'appréhender les risques psychosociaux de manière originale, tout en
-                  garantissant écoute, respect, non-jugement, confidentialité et déontologie (elle est bien entendu
-                  supervisée dans sa pratique).
+                  garantissant <i>écoute</i>, <i>respect</i>, <i>non-jugement</i>, <i>confidentialité</i> et <i>déontologie
+                </i> (elle est bien entendu supervisée dans sa pratique).
                 </p>
                 <br/>
                 <p>
-                  {ARTALGIE} fait partie de la coopérative d‘entreprises Smart depuis janvier 2019.
+                  {ARTALGIE} fait partie de la coopérative d‘entreprises <a href={SMART_LINK}
+                                                                            target="_blank"
+                                                                            rel="noopener noreferrer">Smart
+                </a> depuis janvier 2019.
                 </p>
                 <br/>
                 <p>
                   Pour compléter et en savoir d’avantage :</p>
-                <ul>
-                  <li>
-                    <a href="http://www.arteep.fr/" target="_blank" rel="noopener noreferrer">
-                      ARTEEP</a>
-                  </li>
-                  <li>
-                    <a href="http://ffat-federation.org/ethique" target="_blank" rel="noopener noreferrer">
-                      FFAT – Code de déontologie</a>
-                  </li>
-                  <li>
-                    <a href="https://www.smartfr.fr" target="_blank" rel="noopener noreferrer">
-                      Smart</a>
-                  </li>
-                </ul>
+
+                <div className="a-propos-links">
+                  {A_PROPOS_LINKS.map((item, index) => <Link key={index} {...item} />)}
+                </div>
               </div>
             </div>
           </div>

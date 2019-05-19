@@ -408,6 +408,14 @@ footer.page-footer {
   align-items: center;
 }
 
+.a-propos-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .arttherapie-links {
   display: flex;
   justify-content: space-evenly;
@@ -431,6 +439,16 @@ footer.page-footer {
 
 .rps-links > a > img {
   max-width: 220px;
+  max-height: 220px;
+}
+
+.a-propos-links > a {
+  text-align: center;
+  padding: 1.5em;
+}
+
+.a-propos-links > a > img {
+  max-width: 150px;
   max-height: 220px;
 }
 

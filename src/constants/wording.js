@@ -16,6 +16,7 @@ export const ART_THERAPIE_WIKIPEDIA_LINK = "https://fr.wikipedia.org/wiki/Art-th
 
 export const FFAT = "FFAT (Fédération française des art-thérapeutes)";
 export const FFAT_LINK = "http://ffat-federation.org";
+export const FFAT_LOGO = "/images/arttherapie/ffat.png"
 
 export const MINISTERE_TRAVAIL = "Ministère du travail et de l'emploi";
 export const MINISTERE_TRAVAIL_LINK = "https://travail-emploi.gouv.fr/sante-au-travail/prevention-des-risques-pour-la-sante-au-travail/article/les-rps-c-est-quoi";
@@ -25,6 +26,13 @@ export const AMELI = "Ameli (Assurance maladie)";
 export const AMELI_LINK = "https://www.ameli.fr/llle-et-vilaine/entreprise/prevention/risques/risques-psychosociaux";
 export const INRS = "INRS : Santé et sécurité au travail";
 export const INRS_LINK = "http://www.inrs.fr/risques/psychosociaux/ce-qu-il-faut-retenir.html";
+
+export const ARTEEP = "ARTEEP";
+export const ARTEEP_LINK = "http://www.arteep.fr/";
+export const FFAT_CODE_DEONTOLOGIE = "FFAT - Code de déontologie";
+export const FFAT_CODE_DEONTOLOGIE_LINK = "http://ffat-federation.org/ethique";
+export const SMART = "SMART";
+export const SMART_LINK = "https://www.smartfr.fr";
 
 export const RPS_LINKS = [{
   label: MINISTERE_TRAVAIL,
@@ -112,5 +120,23 @@ export const ART_THERAPIE_LINKS = [
   {
     label: FFAT,
     link: FFAT_LINK,
-    image: "/images/arttherapie/ffat.png"
-  }]
+    image: FFAT_LOGO
+  }];
+
+export const A_PROPOS_LINKS = [
+  {
+    label: ARTEEP,
+    link: ARTEEP_LINK,
+    image: '/images/apropos/arteep.jpg'
+  },
+  {
+    label: FFAT_CODE_DEONTOLOGIE,
+    link: FFAT_CODE_DEONTOLOGIE_LINK,
+    image: FFAT_LOGO
+  },
+  {
+    label: SMART,
+    link: SMART_LINK,
+    image: '/images/apropos/smart.png'
+  }
+];
