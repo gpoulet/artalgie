@@ -9,7 +9,7 @@ function Link({ link, label, image }) {
 
 function Reseau() {
   return (
-    <div className="row">
+    <div className="row no-margin-bottom">
       <div className="col s12">
         <div className="card">
           <div className="card-content">
