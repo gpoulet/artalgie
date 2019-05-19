@@ -383,6 +383,10 @@ footer.page-footer {
   color: $yellow-post-it;
 }
 
+.card.horizontal > .card-image.card-image-contact {
+  max-width: 33em;
+}
+
 .footer-contact {
   line-height: 1;
 }

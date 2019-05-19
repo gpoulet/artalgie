@@ -17,15 +17,20 @@ function Contact() {
   return (
     <div className="row">
       <div className="col s12">
-        <div className="card">
-          <div className="card-content contact-card-content">
-            <span className="card-title">{LINK_CONTACT}</span>
-            {CONTACTS.map((contact, index) => <Field key={index} {...contact}/>)}
+        <div className="card horizontal">
+          <div className="card-stacked">
+            <div className="card-content contact-card-content">
+              <span className="card-title">{LINK_CONTACT}</span>
+              {CONTACTS.map((contact, index) => <Field key={index} {...contact}/>)}
+            </div>
+          </div>
+          <div className="card-image card-image-contact hide-on-med-and-down">
+            <img src="/images/contact.jpg" alt="contact"/>
           </div>
         </div>
       </div>
     </div>
-  );
+);
 }
 
 export default memo(Contact);
