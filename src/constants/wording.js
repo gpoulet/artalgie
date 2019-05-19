@@ -34,6 +34,16 @@ export const FFAT_CODE_DEONTOLOGIE_LINK = "http://ffat-federation.org/ethique";
 export const SMART = "Coopérative d'entreprises SMART";
 export const SMART_LINK = "https://www.smartfr.fr";
 
+export const PHOTOGRAPHE = "Claire Le Fourn";
+export const PHOTOGRAPHE_LINK = "https://www.facebook.com/clairelefourn/";
+
+export const AQT = "AQT";
+export const AQT_LINK = "http://www.quaisetoiles.fr";
+export const ALEXANDRA_SERING = "Alexandra SERINGE";
+export const ALEXANDRA_SERINGE_LINK = "http://www.alexandraseringe.com";
+export const VALERIE_LEROUX = "Valérie LE ROUX";
+export const VALERIE_LEROUX_LINK = "http://valerie-leroux.fr";
+
 export const RPS_LINKS = [{
   label: MINISTERE_TRAVAIL,
   link: MINISTERE_TRAVAIL_LINK,
@@ -140,3 +150,22 @@ export const A_PROPOS_LINKS = [
     image: '/images/apropos/smart.png'
   }
 ];
+
+export const RESEAU_LINKS = [
+  {
+    label: AQT,
+    link: AQT_LINK,
+    image: '/images/reseau/aqt.jpg'
+  },
+  {
+    label: ALEXANDRA_SERING,
+    link: ALEXANDRA_SERINGE_LINK,
+    image: '/images/reseau/alexandra-seringue.jpg'
+  },
+  {
+    label: VALERIE_LEROUX,
+    link: VALERIE_LEROUX_LINK,
+    image: '/images/reseau/valerie-leroux.png'
+
+  }
+]

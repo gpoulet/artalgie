@@ -400,22 +400,6 @@ footer.page-footer {
   color: $white-grey;
 }
 
-.rps-links {
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.a-propos-links {
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-around;
-  flex-wrap: wrap;
-  align-items: flex-end;
-}
-
 .arttherapie-links {
   display: flex;
   justify-content: space-evenly;
@@ -433,6 +417,14 @@ footer.page-footer {
   max-height: 10em;
 }
 
+.rps-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .rps-links > a {
   padding: 1.5em;
 }
@@ -440,6 +432,31 @@ footer.page-footer {
 .rps-links > a > img {
   max-width: 220px;
   max-height: 220px;
+}
+
+.reseau-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.reseau-links > a {
+  padding: 1.5em;
+}
+
+.reseau-links > a > img {
+  max-width: 300px;
+  max-height: 100px;
+}
+
+.a-propos-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .a-propos-links > a {

@@ -5,7 +5,7 @@ import {
   ARTALGIE,
   A_PROPOS_LINKS,
   FFAT_CODE_DEONTOLOGIE_LINK,
-  ARTEEP_LINK, SMART_LINK
+  ARTEEP_LINK, SMART_LINK, PHOTOGRAPHE_LINK, PHOTOGRAPHE
 } from '../../constants'
 
 function Link({ link, label, image }) {
@@ -28,7 +28,10 @@ function APropos() {
             <div className="row">
               <div className="col m4 push-m8 l3 push-l9 xl2 push-xl10 intervenante">
                 <img className="responsive-img circle" src="/images/intervenante.jpg" alt="L'intervenante"/>
-                <p className="center-align">Nathalie POULET-GUILBERT</p>
+                <p className="center-align"><b>Nathalie POULET-GUILBERT</b><br/>
+                  (photo : <a href={PHOTOGRAPHE_LINK} target="_blank" rel="noopener noreferrer">{PHOTOGRAPHE}</a>)
+
+                </p>
               </div>
               <div className="col m8 pull-m4 l9 pull-l3 xl10 pull-xl2">
 
