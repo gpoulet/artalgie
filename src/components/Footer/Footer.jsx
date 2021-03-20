@@ -28,13 +28,13 @@ function Footer() {
     <footer className="page-footer">
       <div className="container">
         <div className="row">
-          <div className="col s12 l4 xl4">
+          <div className="col s12 l5 xl4">
             <div className="brand-logo">
               <Logo/>
             </div>
             <span className="white-square-footer">{SLOGAN}</span>
           </div>
-          <div className="col s12 l6 xl5">
+          <div className="col s12 l5 xl5">
             <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="footer-title">Contact</div>
