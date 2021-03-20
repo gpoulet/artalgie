@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import {
-  LINK_CREATIONS, CREATIONS
+  LINK_CREATIONS, CREATIONS, ETOFFE_DE_MERLIN_LINK
 } from '../../constants'
 
 function Creations() {
@@ -15,7 +15,8 @@ function Creations() {
                 Artalgie se diversifie !
               </p>
               <br/>
-              <p>L'art-thérapeute, Nathalie, reste en mouvement et propose désormais ses créations à la vente à l'<b>Etoffe de Merlin</b> à Iffendic.</p>
+              <p>L'art-thérapeute, Nathalie, reste en mouvement et propose désormais ses créations à la vente à l'
+                <b><a href={ETOFFE_DE_MERLIN_LINK} target="_blank">Etoffe de Merlin</a></b> à Iffendic.</p>
               <br/>
               <p>Elle propose diverses confections d'accessoires textiles : bonnets, lingettes démaquillantes, charlottes couvre-plat, ...</p>
               <br/>
@@ -24,6 +25,7 @@ function Creations() {
           <div className="row">
             {CREATIONS.map((item, index) =>
               <img className="materialboxed creation center-align col s12 m6 l4 xl4"
+                   width="200px"
                    key={index}
                    src={item.image}
                    alt={item.label}/>)}
