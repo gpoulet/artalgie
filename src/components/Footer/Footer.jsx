@@ -34,7 +34,7 @@ function Footer() {
             </div>
             <span className="white-square-footer">{SLOGAN}</span>
           </div>
-          <div className="col s12 l6 xl6">
+          <div className="col s12 l6 xl5">
             <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="footer-title">Contact</div>
@@ -42,7 +42,7 @@ function Footer() {
               {CONTACTS.map((contact, index) => <Field key={index} {...contact}/>)}
             </div>
           </div>
-          <div className="col s12 l2 xl2">
+          <div className="col s12 l2 xl3">
             <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="footer-title">Liens</div>
             <ul className="footer-text">
