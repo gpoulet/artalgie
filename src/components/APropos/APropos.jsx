@@ -5,7 +5,7 @@ import {
   ARTALGIE,
   A_PROPOS_LINKS,
   FFAT_CODE_DEONTOLOGIE_LINK,
-  ARTEEP_LINK, SMART_LINK, PHOTOGRAPHE_LINK, PHOTOGRAPHE
+  ARTEEP_LINK, PHOTOGRAPHE_LINK, PHOTOGRAPHE
 } from '../../constants'
 
 function Link({ link, label, image }) {
@@ -60,26 +60,23 @@ function APropos() {
                 <br/>
                 <p>
                   Nathalie est également formée à de nombreuses pratiques artistiques : <i>théâtre</i>, <i>danse</i>
-                  , <i>peinture</i>, <i>dessin</i>, <i>céramique</i>, <i>gravure</i>, <i>photographie</i>.
+                  , <i>peinture</i>, <i>dessin</i>, <i>céramique</i>, <i>gravure</i>, <i>photographie</i>, <i>marionnettes</i>.
                   <br/>
                   Vous pouvez retrouver son <b>parcours artistique</b> sur son site internet
                   : <a
                   href={SITE_NATHALIE} target="_blank" rel="noopener noreferrer">www.nathaliepoulet.com</a>
                 </p>
+                <br />
+                <p>
+                  Elle vous reçoit à son cabinet pour des <b>ateliers en individuel</b> ou <b>en groupe</b>.
+                </p>
                 <br/>
                 <p>
-                  Aujourd'hui, elle souhaite proposer son <b>savoir-faire</b>, ses <b>connaissances</b> et
+                  Elle propose également son <b>savoir-faire</b>, ses <b>connaissances</b> et
                   son <b>expertise</b> auprès des
                   entreprises pour leur permettre d'appréhender les risques psychosociaux de manière originale, tout en
                   garantissant <i>écoute</i>, <i>respect</i>, <i>non-jugement</i>, <i>confidentialité</i> et <i>déontologie
                 </i> (elle est bien entendu supervisée dans sa pratique).
-                </p>
-                <br/>
-                <p>
-                  {ARTALGIE} fait partie de la coopérative d‘entreprises <a href={SMART_LINK}
-                                                                            target="_blank"
-                                                                            rel="noopener noreferrer">Smart
-                </a> depuis janvier 2019.
                 </p>
                 <br/>
                 <p>

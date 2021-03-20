@@ -4,7 +4,7 @@ import {
   ROUTER,
   ROUTING_MENTIONS_LEGALES,
   LINK_MENTIONS_LEGALES,
-  CONTACTS
+  CONTACTS, SLOGAN
 } from '../../constants'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
@@ -32,7 +32,7 @@ function Footer() {
             <div className="brand-logo">
               <Logo/>
             </div>
-            <span className="white-square-footer">Art-thérapie en entreprise</span>
+            <span className="white-square-footer">{SLOGAN}</span>
           </div>
           <div className="col s12 l6 xl6">
             <div className="show-on-small hide-on-large-only"><br/></div>
@@ -53,7 +53,7 @@ function Footer() {
       </div>
       <div className="footer-copyright">
         <div className="container footer-bottom-text">
-          © 2019 {ARTALGIE}
+          © 2019-{new Date().getFullYear()} {ARTALGIE}
           <Link className="footer-bottom-link right" to={ROUTING_MENTIONS_LEGALES}>{LINK_MENTIONS_LEGALES}</Link>
         </div>
       </div>

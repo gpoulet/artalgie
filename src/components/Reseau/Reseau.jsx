@@ -3,7 +3,7 @@ import { LINK_RESEAU, RESEAU_LINKS } from '../../constants'
 
 function Link({ link, label, image }) {
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer"><img src={image} alt={label}/></a>
+    <a className="center-align col s12 m6 l4 xl4 reseau-link" href={link} target="_blank" rel="noopener noreferrer"><img src={image} alt={label}/></a>
   )
 }
 
@@ -20,24 +20,9 @@ function Reseau() {
             <p>
               Vous pourrez découvrir leurs actions, leurs activités, leurs motivations…</p>
 
-            <div className="reseau-links">
+            <div className="reseau-links row">
               {RESEAU_LINKS.map((item, index) => <Link key={index} {...item} />)}
             </div>
-
-
-            {/*<br/>*/}
-            {/*<p>*/}
-            {/*  La photographe :<br/>*/}
-            {/*  <a href="https://www.instagram.com/clairelefourn/?hl=fr" target="_blank" rel="noopener noreferrer">*/}
-            {/*    Instagram</a>*/}
-            {/*  <br/>*/}
-            {/*  <a href="https://www.facebook.com/clairelefourn/" target="_blank" rel="noopener noreferrer">*/}
-            {/*    Facebook</a>*/}
-            {/*  <br/>*/}
-            {/*  <a href="https://www.linkedin.com/in/claire-le-fourn/?originalSubdomain=fr" target="_blank"*/}
-            {/*     rel="noopener noreferrer">*/}
-            {/*    LinkedIn</a>*/}
-            {/*</p>*/}
 
           </div>
         </div>

@@ -1,13 +1,24 @@
+import { ICON_ART_THERAPIE } from './routing'
+
 export const ARTALGIE = "Artalgie";
+export const SLOGAN = "Quand l'art soulage des maux";
 
 export const TELEPHONE = "06 59 23 18 95";
 export const TELEPHONE_LINK = "tel:+33659231895";
 export const EMAIL = "contact@artalgie.fr";
 export const EMAIL_LINK = `mailto:${EMAIL}`;
+export const ADDRESS = "14 rue des lauriers - 35750 IFFENDIC";
+export const ADDRESS_LINK = "https://www.google.com/maps/search/?api=1"+ADDRESS;
 export const PAGE_FACEBOOK_LINK = "https://www.facebook.com/Artalgie";
 export const PAGE_FACEBOOK = PAGE_FACEBOOK_LINK;
-export const LINKEDIN_LINK = "https://www.linkedin.com/company/artalgie/";
+export const LINKEDIN_LINK = "https://www.linkedin.com/company/artalgie";
 export const LINKEDIN = LINKEDIN_LINK;
+export const YOUTUBE_LINK = "https://www.youtube.com/channel/UCrI0K4xURujVaGJzjKg2wxg";
+export const YOUTUBE = YOUTUBE_LINK;
+export const INSTA_LINK = "https://www.instagram.com/artalgie";
+export const INSTA = INSTA_LINK;
+
+export const ADDRESS_CABINET = "14 rue des lauriers à Iffendic";
 
 export const SITE_NATHALIE = "http://www.nathaliepoulet.com"
 
@@ -43,6 +54,14 @@ export const ALEXANDRA_SERING = "Alexandra SERINGE";
 export const ALEXANDRA_SERINGE_LINK = "http://www.alexandraseringe.com";
 export const VALERIE_LEROUX = "Valérie LE ROUX";
 export const VALERIE_LEROUX_LINK = "http://valerie-leroux.fr";
+export const EAFB = "Entreprendre Au Féminin Bretagne";
+export const EAFB_LINK = "https://eafb.fr/";
+export const FEMMES_DE_BRETAGNE = "Femmes de Bretagne";
+export const FEMMES_DE_BRETAGNE_LINK = "http://www.femmesdebretagne.fr/";
+export const OHB = "OhHappyBreizh";
+export const OHB_LINK = "https://ohhappybreizh.fr/";
+export const ETOFFE_DE_MERLIN = "L'étoffe de Merlin";
+export const ETOFFE_DE_MERLIN_LINK = "https://www.facebook.com/letoffedemerlin";
 
 export const RPS_LINKS = [{
   label: MINISTERE_TRAVAIL,
@@ -77,18 +96,39 @@ export const CONTACTS = [{
   link: EMAIL_LINK,
   value: EMAIL,
   target: "_self"
-}, {
-  icon: 'thumb_up',
-  label: 'Facebook',
-  link: PAGE_FACEBOOK_LINK,
-  value: PAGE_FACEBOOK,
-  target: "_blank"
+},{
+  icon: ICON_ART_THERAPIE,
+  label: 'Cabinet',
+  link: ADDRESS_LINK,
+  value: ADDRESS,
+  target: "_self"
 },
   {
     icon: 'language',
     label: 'LinkedIn',
     link: LINKEDIN_LINK,
     value: LINKEDIN,
+    target: "_blank"
+  },
+  {
+    icon: 'camera_alt',
+    label: 'Instagram',
+    link: INSTA_LINK,
+    value: INSTA,
+    target: "_blank"
+  },
+  {
+    icon: 'videocam',
+    label: 'YouTube',
+    link: YOUTUBE_LINK,
+    value: YOUTUBE,
+    target: "_blank"
+  },
+  {
+    icon: 'thumb_up',
+    label: 'Facebook',
+    link: PAGE_FACEBOOK_LINK,
+    value: PAGE_FACEBOOK,
     target: "_blank"
   }
 ]
@@ -143,15 +183,36 @@ export const A_PROPOS_LINKS = [
     label: FFAT_CODE_DEONTOLOGIE,
     link: FFAT_CODE_DEONTOLOGIE_LINK,
     image: FFAT_LOGO
-  },
-  {
-    label: SMART,
-    link: SMART_LINK,
-    image: '/images/apropos/smart.png'
   }
+  // ,
+  // {
+  //   label: SMART,
+  //   link: SMART_LINK,
+  //   image: '/images/apropos/smart.png'
+  // }
 ];
 
 export const RESEAU_LINKS = [
+  {
+    label: EAFB,
+    link: EAFB_LINK,
+    image: '/images/reseau/eafb.png'
+  },
+  {
+    label: FEMMES_DE_BRETAGNE,
+    link: FEMMES_DE_BRETAGNE_LINK,
+    image: '/images/reseau/femmes-de-bretagne.jpeg'
+  },
+  {
+    label: OHB,
+    link: OHB_LINK,
+    image: '/images/reseau/ohb.png'
+  },
+  {
+    label: ETOFFE_DE_MERLIN,
+    link: ETOFFE_DE_MERLIN_LINK,
+    image: '/images/reseau/etoffe-de-merlin.jpeg'
+  },
   {
     label: AQT,
     link: AQT_LINK,
@@ -166,6 +227,20 @@ export const RESEAU_LINKS = [
     label: VALERIE_LEROUX,
     link: VALERIE_LEROUX_LINK,
     image: '/images/reseau/valerie-leroux.png'
+  },
+]
 
-  }
+export const CREATIONS = [
+  {
+    image: '/images/creations/bonnets.jpg',
+    label: 'Bonnets'
+  },
+  {
+    image: '/images/creations/lingettes.jpg',
+    label: 'Lingettes'
+  },
+  {
+    image: '/images/creations/charlottes.jpg',
+    label: 'Charlottes'
+  },
 ]

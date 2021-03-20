@@ -5,11 +5,11 @@ import Parallax from '../Parallax'
 import {
   ARTALGIE,
   ICON_A_PROPS,
-  ICON_ART_THERAPIE,
-  ICON_CONTACT, ICON_PRESTATIONS, ICON_RESEAU, ICON_RPS, LINK_A_PROPOS,
-  LINK_ART_THERAPIE, LINK_CONTACT, LINK_PRESTATIONS, LINK_RESEAU, LINK_RPS, ROUTING_A_PROPOS,
-  ROUTING_ART_THERAPIE,
-  ROUTING_CONTACT, ROUTING_PRESTATIONS, ROUTING_RESEAU, ROUTING_RPS
+  ICON_ART_THERAPIE, ICON_CABINET,
+  ICON_CONTACT, ICON_PRESTATIONS, ICON_RESEAU, LINK_A_PROPOS,
+  LINK_ART_THERAPIE, LINK_CABINET, LINK_CONTACT, LINK_PRESTATIONS, LINK_RESEAU, ROUTING_A_PROPOS,
+  ROUTING_ART_THERAPIE, ROUTING_CABINET,
+  ROUTING_CONTACT, ROUTING_PRESTATIONS, ROUTING_RESEAU, SLOGAN
 } from '../../constants'
 import { Link } from 'react-router-dom'
 
@@ -23,8 +23,8 @@ function Accueil() {
       image="images/accueil5.jpg"
     >
       <div>
-        <img src="/images/logo/logo-white.svg" width="300px" alt="Artalgie" />
-        <div className="white-square">Art-thérapie en entreprise</div>
+        <img src="/images/logo/logo-white.svg" width="350px" alt="Artalgie" />
+        <div className="white-square">{SLOGAN}</div>
       </div>
     </Parallax>
 
@@ -50,11 +50,14 @@ function Accueil() {
     <div className="row row-accueil beige-light">
       <div className="col s12 center-align">
        <h4 className="accueil-title">
-          Une étude personnalisée de vos besoins ?</h4>
+          Une écoute personnalisée ?</h4>
 
 
         <p className="accueil-text">Contactez l'art-thérapeute.</p>
-        <p className="accueil-text"> Elle vous accompagne dans les étapes de l'expression de votre besoin à la mise en
+        <p className="accueil-text">
+          Particuliers : Elle vous reçoit pour des consultations en individuel ou en groupe.
+        </p>
+        <p className="accueil-text">Entreprises : Elle vous accompagne dans les étapes de l'expression de votre besoin à la mise en
           œuvre d'interventions auprès de vos salariés.
         </p>
         <br/>
@@ -70,16 +73,15 @@ function Accueil() {
     <div className="row row-accueil white">
       <div className="col s12 center-align">
        <h4 className="accueil-title">
-          {ARTALGIE} propose des sessions d'art-thérapie en entreprise pour prévenir et lutter contre les risques
-          psychosociaux, et notamment l'épuisement professionnel.</h4>
+          {ARTALGIE} propose des sessions d'art-thérapie en cabinet.</h4>
 
 
-        <p className="accueil-text">Les RPS c'est quoi ? On vous éclaire….</p>
+        <p className="accueil-text">Venez découvrir le lieu...</p>
         <br/>
-        <Link to={ROUTING_RPS}
+        <Link to={ROUTING_CABINET}
               className="waves-effect waves-light btn button-pink">
-          <i className="material-icons left">{ICON_RPS}</i>
-          {LINK_RPS}
+          <i className="material-icons left">{ICON_CABINET}</i>
+          {LINK_CABINET}
         </Link>
 
       </div>

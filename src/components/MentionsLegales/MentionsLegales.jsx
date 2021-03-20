@@ -18,8 +18,7 @@ function MentionsLegales() {
               l’économie numérique, il est précisé aux utilisateurs du site <LinkArtalgie/> l’identité des
               différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
             <p>
-              <b>Propriétaire : </b> Nathalie Poulet-Guilbert – Smart SA SCIC à capital variable – 75 rue Léon
-              Gambetta – 59000 LILLE
+              <b>Propriétaire : </b> Nathalie Poulet-Guilbert – Artalgie - 14 rue des lauriers - 35750 IFFENDIC
             </p>
             <p>
               <b>Créateur :</b> Nathalie Poulet-Guilbert – <a href="http://nathaliepoulet.com" target="_blank"

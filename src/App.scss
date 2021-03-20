@@ -346,10 +346,9 @@ footer.page-footer {
   color: $purple;
   background-color: $white;
   font-family: $product-sans;
-  text-transform: uppercase;
   padding: 0.5em;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -358,10 +357,9 @@ footer.page-footer {
   color: $purple;
   background-color: $white-grey;
   font-family: $product-sans;
-  text-transform: uppercase;
   padding: 0.5em;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: left;
 }
 
@@ -384,7 +382,7 @@ footer.page-footer {
 }
 
 .card.horizontal > .card-image.card-image-contact {
-  max-width: 33em;
+  max-width: 48em;
 }
 
 .footer-contact {
@@ -438,16 +436,8 @@ footer.page-footer {
   max-height: 220px;
 }
 
-.reseau-links {
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.reseau-links > a {
-  padding: 1.5em;
+a.reseau-link {
+  padding: 30px 0 !important;
 }
 
 .reseau-links > a > img {
@@ -540,4 +530,8 @@ footer.page-footer {
 
 .no-margin-bottom {
   margin-bottom: 0;
+}
+
+.creation {
+  padding: 30px !important;
 }
