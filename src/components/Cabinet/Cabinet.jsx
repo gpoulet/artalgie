@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { ADDRESS_CABINET, LINK_CABINET } from '../../constants'
+import { ADDRESS_CABINET, ADDRESS_LINK, LINK_CABINET } from '../../constants'
 
 function Cabinet() {
   return (
@@ -10,7 +10,10 @@ function Cabinet() {
             <div className="card-content">
               <span className="card-title">{LINK_CABINET}</span>
               <p>
-                Nathalie vous reçoit dans son <b>cabinet</b> situé au <i>{ADDRESS_CABINET}</i>.
+                Nathalie vous reçoit dans son <b>cabinet</b> situé au <i><a href={ADDRESS_LINK} target="_blank"  rel="noreferrer">
+                {ADDRESS_CABINET}
+              </a>
+              </i>.
               </p>
               <br/>
               <p>Elle vous accueille pour des <b>atelier en groupe</b> ou en <b>individuel</b>.</p>

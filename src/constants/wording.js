@@ -8,7 +8,7 @@ export const TELEPHONE_LINK = "tel:+33659231895";
 export const EMAIL = "contact@artalgie.fr";
 export const EMAIL_LINK = `mailto:${EMAIL}`;
 export const ADDRESS = "14 rue des lauriers - 35750 IFFENDIC";
-export const ADDRESS_LINK = "https://www.google.com/maps/search/?api=1"+ADDRESS;
+export const ADDRESS_LINK = "https://maps.google.com/?q="+ADDRESS;
 export const PAGE_FACEBOOK_LINK = "https://www.facebook.com/Artalgie";
 export const PAGE_FACEBOOK = PAGE_FACEBOOK_LINK;
 export const LINKEDIN_LINK = "https://www.linkedin.com/company/artalgie";
@@ -101,7 +101,7 @@ export const CONTACTS = [{
   label: 'Cabinet',
   link: ADDRESS_LINK,
   value: ADDRESS,
-  target: "_self"
+  target: "_blank"
 },
   {
     icon: 'language',
