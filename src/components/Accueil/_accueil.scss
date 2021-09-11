@@ -1,6 +1,10 @@
 @import "../../styles/_colors";
 @import "../../styles/_fonts";
 
+$promo-icon: $blue-grey;
+$promo-icon-info: $accent-color;
+$promo-text-info: $dark-grey;
+
 .accueil .row .col {
   padding: 20px 20px 50px 20px;
 }

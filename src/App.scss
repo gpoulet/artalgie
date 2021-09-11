@@ -1,6 +1,12 @@
 @import 'styles/_colors';
 @import 'styles/_fonts';
 
+$logo-weight: 500;
+$logo-color: $white;
+
+$card-title: $accent-color;
+$card-title-weight: 400;
+
 body {
   background-color: $light-grey;
   margin: 0;

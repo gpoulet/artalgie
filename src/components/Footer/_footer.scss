@@ -4,6 +4,14 @@
 $font-footer-title: $blogger;
 $font-footer: $roboto;
 
+$footer: $primary-color;
+$footer-text: $black;
+$footer-bottom-text: $white;
+$footer-text-label: $purple;
+$footer-text-title: $purple;
+$footer-link: $black;
+$footer-bottom-link: $white;
+
 footer.page-footer {
   background-color: $footer;
 }
