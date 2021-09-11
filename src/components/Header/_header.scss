@@ -3,11 +3,29 @@
 
 $font-menu: $roboto;
 
+$app-bar-menu-text-desktop: $black;
 $menu-text: $black;
 $menu-text-weight: 400;
 
+$drawer-background: $white;
+$app-bar-color: $primary-color;
+$burger-icon-color: $white;
+
+#root > div > div > nav {
+  background-color: $app-bar-color;
+}
+
+#root > div > div > div > ul > li > nav {
+  background-color: $app-bar-color;
+}
+
+#root > div > div > div > ul {
+  background-color: $drawer-background;
+}
+
+
 nav .nav-wrapper > .sidenav-trigger {
-  color: $white;
+  color: $burger-icon-color;
 }
 
 nav .nav-wrapper > .brand-logo {
@@ -21,7 +39,7 @@ nav .nav-wrapper > ul#nav-mobile > li > a:hover {
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a {
-  color: $menu-text;
+  color: $app-bar-menu-text-desktop;
   font-weight: $menu-text-weight;
   font-family: $font-menu;
   border-bottom: 2px solid transparent;
