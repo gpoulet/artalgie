@@ -9,7 +9,7 @@ export interface FieldProps {
 const Field = ({contact: {icon, label, link, value, target}}: FieldProps): ReactElement =>
   <p className="valign-wrapper"><i className="material-icons contact">{icon}</i>
     {label}&nbsp;:&nbsp;
-    <a href={link} target={target} className="truncate">{value}</a>
+    <a href={link} target={target} className="truncate" rel="noopener noreferrer">{value}</a>
   </p>
 
 
