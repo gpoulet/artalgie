@@ -2,11 +2,12 @@ import React, { memo, ReactElement, useEffect } from 'react'
 // @ts-ignore
 import M from "materialize-css/dist/js/materialize.min";
 
-import Logo from './Logo'
+import Logo from '../Logo'
 import BurgerMenuLink from "./BurgerMenuLink";
 
-import { ROUTER } from '../../constants'
+import { ROUTER } from '../../../constants'
 
+import "./_burgerMenu.scss"
 
 const DOM_CONTENT_LOADED = 'DOMContentLoaded'
 

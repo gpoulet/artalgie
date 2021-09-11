@@ -1,0 +1,75 @@
+@import '../../styles/_colors';
+@import '../../styles/_fonts';
+
+$font-footer-title: $blogger;
+$font-footer: $roboto;
+
+footer.page-footer {
+  background-color: $footer;
+}
+
+.footer-text {
+  color: $footer-text;
+  font-family: $font-footer;
+}
+
+.footer-bottom-text {
+  color: $footer-bottom-text;
+  font-family: $font-footer;
+}
+
+.footer-text-label {
+  color: $footer-text-label;
+  font-family: $font-footer;
+  font-weight: 500;
+}
+
+.footer-title {
+  color: $footer-text-title;
+  font-family: $font-footer-title;
+  font-size: 2.2rem;
+  margin-bottom: -10px;
+}
+
+.footer-link {
+  color: $footer-link;
+  font-family: $font-footer;
+}
+
+.footer-bottom-link {
+  color: $footer-bottom-link;
+  font-family: $font-footer;
+}
+
+.page-footer {
+  padding-top: 30px;
+}
+
+
+.footer-contact {
+  line-height: 1;
+}
+
+.footer-contact > p {
+  color: $black;
+}
+
+.footer-contact > p > a {
+  color: $purple;
+  font-weight: 500;
+}
+
+.footer-contact > p > i {
+  color: $white-grey;
+}
+
+.white-square-footer {
+  border-radius: 0.6em;
+  color: $purple;
+  background-color: $white-grey;
+  font-family: $product-sans;
+  padding: 0.5em;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: left;
+}

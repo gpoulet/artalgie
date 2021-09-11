@@ -1,0 +1,47 @@
+@import '../../styles/_colors';
+@import '../../styles/_fonts';
+
+.sessions {
+  padding: 20px;
+}
+
+.sessions > div > div.card.card-content {
+  padding: 20px;
+  display: grid;
+}
+.sessions > div > div {
+  font-family: $product-sans;
+  font-size: 1.1em;
+  vertical-align: middle;
+  //margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+  .sessions > div > div {
+    min-height: 150px !important;
+  }
+}
+
+.sessions > div:nth-child(6n+1) > div {
+  background-color: $grey-purple-scotch;
+}
+
+.sessions > div:nth-child(6n+2) > div {
+  background-color: $pink-scotch;
+}
+
+.sessions > div:nth-child(6n+3) > div{
+  background-color: $yellow-post-it;
+}
+
+.sessions > div:nth-child(6n+4) > div {
+  background-color: $green;
+}
+
+.sessions > div:nth-child(6n+5) > div {
+  background-color: $blue-post-it;
+}
+
+.sessions > div:nth-child(6n) > div{
+  background-color: $beige;
+}

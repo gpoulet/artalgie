@@ -1,5 +1,8 @@
 import React, { memo, ReactElement } from "react";
+
 import Session from "./Session";
+
+import "./_sessions.scss"
 
 export interface SessionsProps {
   sessions: string[]

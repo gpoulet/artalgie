@@ -1,0 +1,8 @@
+$roboto: Roboto, sans-serif;
+$blogger: BloggerSans, Roboto, sans-serif;
+$product-sans: 'Product Sans', Roboto, sans-serif;
+
+@font-face {
+  font-family: 'BloggerSans';
+  src: local('BloggerSans'), url('../fonts/BloggerSans.woff') format('woff');
+}

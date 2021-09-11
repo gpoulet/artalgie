@@ -1,0 +1,25 @@
+.a-propos-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.a-propos-links > a {
+  text-align: center;
+  padding: 2em;
+}
+
+.a-propos-links > a > img {
+  max-width: 250px;
+  max-height: 160px;
+}
+
+.a-propos > .hero-container {
+  height: 60rem;
+}
+
+.intervenante {
+  margin-bottom: 30px;
+}

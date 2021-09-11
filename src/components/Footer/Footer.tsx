@@ -5,6 +5,8 @@ import Field from "./Field";
 import FooterLink from "./FooterLink";
 import Logo from './Logo'
 
+import "./_footer.scss"
+
 import {
   ARTALGIE,
   ROUTER,

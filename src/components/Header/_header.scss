@@ -1,0 +1,57 @@
+@import "../../styles/_colors.scss";
+@import "../../styles/_fonts.scss";
+
+$font-menu: $roboto;
+
+nav .nav-wrapper > .sidenav-trigger {
+  color: $white;
+}
+
+nav .nav-wrapper > .brand-logo {
+  color: $menu-text;
+}
+
+nav .nav-wrapper > ul#nav-mobile > li > a:hover {
+  background-color: $primary-color;
+  color: $purple;
+  font-weight: 600;
+}
+
+nav .nav-wrapper > ul#nav-mobile > li > a {
+  color: $menu-text;
+  font-weight: $menu-text-weight;
+  font-family: $font-menu;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+  margin: -4px 0 -4px 0;
+}
+
+nav .nav-wrapper > ul#nav-mobile > li > a.active {
+  // border-radius: 10px;
+  // border-bottom-color: $purple;
+  background-color: $white;
+  font-weight: 600;
+  font-size: 1rem;
+  color: $purple;
+}
+
+@media only screen and (min-width: 992px) {
+
+  nav > div > a.brand-logo {
+    padding-left: 20px;
+  }
+}
+
+.sidenav-trigger.buttonLink:focus {
+  background-color: $primary-color;
+}
+
+.buttonLink {
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.buttonLink:hover, .ButtonLink:focus {
+  text-decoration: none;
+}

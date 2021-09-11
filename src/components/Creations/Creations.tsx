@@ -1,7 +1,8 @@
 import React, { memo, ReactElement } from "react";
-import {
-  LINK_CREATIONS, CREATIONS, ETOFFE_DE_MERLIN_LINK
-} from '../../constants'
+
+import { LINK_CREATIONS, CREATIONS, ETOFFE_DE_MERLIN_LINK } from '../../constants'
+
+import "./_creations.scss"
 
 const Creations = (): ReactElement =>
   <div className="row no-margin-bottom">

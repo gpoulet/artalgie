@@ -2,6 +2,8 @@ import React, { memo, ReactElement } from "react";
 
 import Fields from "./Fields";
 
+import "./_contact.scss"
+
 const Contact = (): ReactElement =>
   <div className="row no-margin-bottom">
     <div className="col s12">

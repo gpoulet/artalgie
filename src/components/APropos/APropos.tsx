@@ -11,6 +11,8 @@ import {
   ARTEEP_LINK, PHOTOGRAPHE_LINK, PHOTOGRAPHE
 } from '../../constants'
 
+import "./_apropos.scss"
+
 const APropos = (): ReactElement => {
   return (
     <div className="row no-margin-bottom">

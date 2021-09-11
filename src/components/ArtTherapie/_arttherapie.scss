@@ -1,0 +1,16 @@
+.arttherapie-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.arttherapie-links > a {
+  text-align: center;
+  padding: 1.5em;
+}
+
+.arttherapie-links > a > img {
+  max-height: 8em;
+}

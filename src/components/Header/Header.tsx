@@ -7,6 +7,8 @@ import HeaderLink from "./HeaderLink";
 
 import { ROUTER, ROUTING_ACCUEIL } from '../../constants'
 
+import "./_header.scss"
+
 const Header = (): ReactElement =>
   <div>
     <nav>

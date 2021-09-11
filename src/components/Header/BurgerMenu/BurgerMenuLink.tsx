@@ -1,6 +1,7 @@
 import React, { memo, ReactElement } from 'react'
 import { NavLink } from 'react-router-dom';
-import { RouterItem } from "../../constants";
+
+import { RouterItem } from "../../../constants";
 
 export interface BurgerMenuLinkProps {
   route: RouterItem

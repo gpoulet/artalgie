@@ -1,0 +1,82 @@
+@import "../../styles/_colors";
+@import "../../styles/_fonts";
+
+.accueil .row .col {
+  padding: 20px 20px 50px 20px;
+}
+
+.accueil > .hero-container {
+  height: 40rem;
+}
+
+.accueil-title {
+  font-family: $blogger;
+}
+
+.accueil-text {
+  font-size: 1.4rem;
+  color: $dark-grey;
+}
+
+.white-square {
+  border-radius: 0.6em;
+  color: $purple;
+  background-color: $white;
+  font-family: $product-sans;
+  padding: 0.5em;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.beige-light {
+  background-color: $beige-light;
+}
+
+.row-accueil {
+  margin-bottom: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.button-purple, .button-purple:hover {
+  background-color: $purple;
+  color: $white;
+}
+
+.button-blue-light, .button-blue-light:hover {
+  background-color: $blue-light;
+  color: $white;
+}
+
+.button-pink, .button-pink:hover {
+  background-color: $pink;
+  color: $white;
+}
+
+.button-yellow, .button-yellow:hover {
+  background-color: $yellow;
+  color: $white;
+}
+
+.button-grey-purple, .button-grey-purple:hover {
+  background-color: $grey-purple;
+  color: $white;
+}
+
+.button-brown, .button-brown:hover {
+  background-color: $brown;
+  color: $white;
+}
+
+.promo {
+  color: $promo-icon;
+}
+
+.promo-info {
+  color: $promo-icon-info;
+}
+
+.promo-text-info {
+  color: $promo-text-info;
+}

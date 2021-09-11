@@ -1,0 +1,16 @@
+.rps-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rps-links > a {
+  padding: 1.5em;
+}
+
+.rps-links > a > img {
+  max-width: 220px;
+  max-height: 220px;
+}

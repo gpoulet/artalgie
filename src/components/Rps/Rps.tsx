@@ -4,6 +4,8 @@ import RpsLink from "./RpsLink";
 
 import { RPS_LINKS } from '../../constants'
 
+import "./_rps.scss"
+
 const Rps = (): ReactElement => (
   <div className="row no-margin-bottom">
     <div className="col s12">

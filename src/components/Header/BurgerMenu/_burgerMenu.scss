@@ -1,0 +1,19 @@
+@import "../../../styles/_colors";
+
+$burger-menu-link-active-background: $light-grey;
+$burger-menu-link-active-text: $white;
+$burger-menu-link-active-text-mobile: $purple;
+
+.sidenav .user-view {
+  padding: 0;
+}
+
+ul.sidenav > li > a.active,
+ul.sidenav > li > a.active > i {
+  color: $burger-menu-link-active-text-mobile;
+}
+
+ul.sidenav > li > a.active {
+  background-color: $burger-menu-link-active-background;
+  font-weight: 700;
+}

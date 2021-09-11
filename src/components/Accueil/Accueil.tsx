@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 import Parallax from '../Parallax'
 
+import "./_accueil.scss"
+
 import {
   ARTALGIE,
   ICON_A_PROPS,

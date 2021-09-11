@@ -4,6 +4,8 @@ import Sessions from "./Sessions";
 
 import { ARTALGIE, LINK_PRESTATIONS, SESSIONS_CURATIF, SESSIONS_PREVENTION } from "../../constants";
 
+import "./_prestations.scss"
+
 const Prestations = (): ReactElement =>
   <div className="row no-margin-bottom">
     <div className="col s12">

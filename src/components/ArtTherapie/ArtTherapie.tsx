@@ -4,6 +4,8 @@ import Link from "./Link";
 
 import { LINK_ART_THERAPIE, ART_THERAPIE_LINKS } from '../../constants'
 
+import "./_arttherapie.scss"
+
 const ArtTherapie = (): ReactElement =>
   <div className="row no-margin-bottom">
     <div className="col s12">
