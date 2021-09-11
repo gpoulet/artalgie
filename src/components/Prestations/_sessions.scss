@@ -23,25 +23,25 @@
 }
 
 .sessions > div:nth-child(6n+1) > div {
-  background-color: $grey-purple-scotch;
+  background-color: lighten($grey-purple-scotch, 15%);
 }
 
 .sessions > div:nth-child(6n+2) > div {
-  background-color: $pink-scotch;
+  background-color: lighten($pink-scotch, 15%);
 }
 
 .sessions > div:nth-child(6n+3) > div{
-  background-color: $yellow-post-it;
+  background-color: lighten($yellow-post-it, 10%);
 }
 
 .sessions > div:nth-child(6n+4) > div {
-  background-color: $green;
+  background-color: lighten($green, 10%);
 }
 
 .sessions > div:nth-child(6n+5) > div {
-  background-color: $blue-post-it;
+  background-color: lighten($blue-post-it, 15%);
 }
 
 .sessions > div:nth-child(6n) > div{
-  background-color: $beige;
+  background-color: lighten($beige, 5%);
 }
