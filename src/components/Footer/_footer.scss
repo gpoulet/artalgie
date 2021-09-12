@@ -21,6 +21,10 @@ footer.page-footer {
   font-family: $font-footer;
 }
 
+.footer-links > li {
+  padding-bottom: 0.5rem;
+}
+
 .footer-bottom-text {
   color: $footer-bottom-text;
   font-family: $font-footer;

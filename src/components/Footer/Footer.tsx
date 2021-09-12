@@ -37,7 +37,7 @@ function Footer() {
           <div className="col s12 l2 xl3">
             <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="footer-title">Liens</div>
-            <ul className="footer-text">
+            <ul className="footer-text footer-links">
               {ROUTER.map(route => <FooterLink route={route} key={route.routing} />)}
             </ul>
           </div>
