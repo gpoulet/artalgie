@@ -25,7 +25,7 @@ const Accueil = (): ReactElement =>
       image="images/accueil5.jpg"
     >
       <div>
-        <img src="/images/logo/logo-white.svg" width="350px" alt="Artalgie"/>
+        <img src="/images/logo/logo-white.svg" width="350px" height="323.33px" alt="Artalgie"/>
         <div className="white-square">{SLOGAN}</div>
       </div>
     </Parallax>

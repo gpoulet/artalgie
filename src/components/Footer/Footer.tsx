@@ -20,13 +20,13 @@ function Footer() {
     <footer className="page-footer">
       <div className="container">
         <div className="row">
-          <div className="col s12 l5 xl4">
+          <div className="col s12 l5 xl3 center">
             <div className="brand-logo">
               <Logo/>
             </div>
             <span className="white-square-footer">{SLOGAN}</span>
           </div>
-          <div className="col s12 l5 xl5">
+          <div className="col s12 l5 xl6">
             <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="show-on-small hide-on-large-only"><br/></div>
             <div className="footer-title">Contact</div>
@@ -34,8 +34,7 @@ function Footer() {
               {CONTACTS.map(contact => <Field contact={contact} key={contact.label} />)}
             </div>
           </div>
-          <div className="col s12 l2 xl3">
-            <div className="show-on-small hide-on-large-only"><br/></div>
+          <div className="hide-on-med-and-down col s12 l2 xl2">
             <div className="footer-title">Liens</div>
             <ul className="footer-text footer-links">
               {ROUTER.map(route => <FooterLink route={route} key={route.routing} />)}
