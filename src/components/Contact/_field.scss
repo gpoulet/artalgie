@@ -1,0 +1,13 @@
+@import "../../styles/_colors";
+
+$icon-color: $yellow-post-it;
+
+.field {
+}
+
+.field > svg {
+  width: 1.8rem !important;
+  height: 1.5rem !important;
+  color: $icon-color;
+  margin-right: 0.8rem;
+}

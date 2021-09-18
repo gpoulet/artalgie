@@ -1,4 +1,6 @@
-import { ICON_ART_THERAPIE } from '../routing'
+import { faEnvelope, faMapMarkerAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagramSquare, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 export const ARTALGIE = "Artalgie";
 export const SLOGAN = "Quand l'art soulage des maux";
@@ -101,7 +103,7 @@ export const RPS_LINKS = [{
   }];
 
 export interface ContactItem {
-  icon: string,
+  icon: IconDefinition,
   label: string,
   link: string,
   value: string,
@@ -109,47 +111,47 @@ export interface ContactItem {
 }
 
 export const CONTACTS: ContactItem[] = [{
-  icon: 'phone',
+  icon: faPhoneAlt,
   label: "Téléphone",
   link: TELEPHONE_LINK,
   value: TELEPHONE,
   target: "_self"
 }, {
-  icon: 'email',
+  icon: faEnvelope,
   label: 'Adresse e-mail',
   link: EMAIL_LINK,
   value: EMAIL,
   target: "_self"
 }, {
-  icon: ICON_ART_THERAPIE,
+  icon: faMapMarkerAlt,
   label: 'Cabinet',
   link: ADDRESS_LINK,
   value: ADDRESS,
   target: "_blank"
 },
   {
-    icon: 'language',
+    icon: faLinkedin,
     label: 'LinkedIn',
     link: LINKEDIN_LINK,
     value: LINKEDIN,
     target: "_blank"
   },
   {
-    icon: 'camera_alt',
+    icon: faInstagramSquare,
     label: 'Instagram',
     link: INSTA_LINK,
     value: INSTA,
     target: "_blank"
   },
   {
-    icon: 'videocam',
+    icon: faYoutube,
     label: 'YouTube',
     link: YOUTUBE_LINK,
     value: YOUTUBE,
     target: "_blank"
   },
   {
-    icon: 'thumb_up',
+    icon: faFacebook,
     label: 'Facebook',
     link: PAGE_FACEBOOK_LINK,
     value: PAGE_FACEBOOK,
