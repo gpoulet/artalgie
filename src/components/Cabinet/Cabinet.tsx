@@ -2,10 +2,12 @@ import React, { memo, ReactElement } from "react";
 
 import { ADDRESS_CABINET, ADDRESS_LINK, LINK_CABINET } from '../../constants'
 
+import "./_cabinet.scss";
+
 const Cabinet = (): ReactElement =>
   <div className="row no-margin-bottom">
     <div className="col s12">
-      <div className={window.innerWidth > 650 ? "card horizontal" : "card"}>
+      <div className={window.innerWidth > 960 ? "card horizontal" : "card"}>
         <div className="card-stacked">
           <div className="card-content">
             <span className="card-title">{LINK_CABINET}</span>
@@ -25,7 +27,7 @@ const Cabinet = (): ReactElement =>
           </div>
         </div>
         <div className="card-image card-image-cabinet">
-          <img src="/images/cabinet/cabinet.jpg" alt="contact"/>
+          <img src="/images/cabinet/cabinet.jpg" alt="cabinet"/>
         </div>
       </div>
     </div>

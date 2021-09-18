@@ -14,3 +14,7 @@ $icon-color: $yellow-post-it;
 .contact-card-content > p > i {
   color: $icon-color;
 }
+
+.card.horizontal > .card-image.card-image-contact {
+  max-width: 48em;
+}
