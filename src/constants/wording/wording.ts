@@ -1,4 +1,4 @@
-import { ICON_ART_THERAPIE } from './routing'
+import { ICON_ART_THERAPIE } from '../routing'
 
 export const ARTALGIE = "Artalgie";
 export const SLOGAN = "Quand l'art soulage des maux";

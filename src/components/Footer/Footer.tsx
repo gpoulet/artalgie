@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { Link } from 'react-router-dom'
 
-import Field from "./Field";
+import Field from "../Contact/Field";
 import FooterLink from "./FooterLink";
 import Logo from './Logo'
 
