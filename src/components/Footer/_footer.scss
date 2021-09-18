@@ -6,11 +6,12 @@ $font-footer: $roboto;
 
 $footer: $primary-color;
 $footer-text: $black;
-$footer-bottom-text: $white;
+$footer-bottom-text: $black;
 $footer-text-label: $purple;
 $footer-text-title: $purple;
 $footer-link: $black;
-$footer-bottom-link: $white;
+$footer-bottom-link: $black;
+$footer-bottom-link-hover: $purple;
 
 footer.page-footer {
   background-color: $footer;
@@ -51,6 +52,10 @@ footer.page-footer {
 .footer-bottom-link {
   color: $footer-bottom-link;
   font-family: $font-footer;
+
+  &:hover {
+    color: $footer-bottom-link-hover;
+  }
 }
 
 .page-footer {
