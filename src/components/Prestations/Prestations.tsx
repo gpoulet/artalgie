@@ -1,8 +1,10 @@
 import React, { memo, ReactElement } from "react";
+import Gallery from "react-photo-gallery";
 
 import Sessions from "./Sessions";
 
-import { ARTALGIE, LINK_PRESTATIONS, SESSIONS_CURATIF, SESSIONS_PREVENTION } from "../../constants";
+import { ARTALGIE, LINK_PRESTATIONS } from "../../constants";
+import { SESSIONS_CURATIF, SESSIONS_PREVENTION, PRESTATIONS_PHOTOS } from "./Prestations.constants";
 
 import "./_prestations.scss"
 
@@ -19,12 +21,16 @@ const Prestations = (): ReactElement =>
             dans un parcours actif basé sur les <u>sens</u>.
           </p>
           <br/>
+          <Gallery photos={PRESTATIONS_PHOTOS} />
+          <br/>
           <p className="subtitle-prestations">Prévention</p>
           <p>
             En <u>prévention</u>, pour améliorer la Qualité de Vie au Travail, {ARTALGIE} propose des sessions comme
             suit :
           </p>
           <Sessions sessions={SESSIONS_PREVENTION}/>
+
+
           <p className="subtitle-prestations">Curatif</p>
           <p>
             En <u>aide</u>, {ARTALGIE} peut intégrer votre plan d'actions contenu dans le document unique, ou suite à
