@@ -1,6 +1,8 @@
 import React, { memo, ReactElement } from "react";
+import Gallery from "react-photo-gallery";
 
-import { LINK_CREATIONS, CREATIONS, ETOFFE_DE_MERLIN_LINK } from '../../constants'
+import { LINK_CREATIONS, ETOFFE_DE_MERLIN_LINK } from '../../constants'
+import { CREATIONS } from './Creations.constants';
 
 import "./_creations.scss"
 
@@ -25,13 +27,8 @@ const Creations = (): ReactElement =>
             <p>Sensible aux questions environnementales, elle développe au fur et à mesure des créations "<b>zéro
               déchet</b>".</p>
           </div>
-          <div className="row">
-            {CREATIONS.map((item, index) =>
-              <img className="materialboxed creation center-align col s12 m6 l4 xl4"
-                   width="200px"
-                   key={index}
-                   src={item.image}
-                   alt={item.label}/>)}
+          <div className="creations">
+            <Gallery photos={CREATIONS} />
           </div>
         </div>
       </div>

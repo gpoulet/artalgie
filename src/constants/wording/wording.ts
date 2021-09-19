@@ -296,18 +296,3 @@ export const RESEAU_LINKS: ReseauLinkItem[] = [
     image: '/images/reseau/bib-et-bob.jpg'
   }
 ]
-
-export const CREATIONS = [
-  {
-    image: '/images/creations/bonnets.jpg',
-    label: 'Bonnets'
-  },
-  {
-    image: '/images/creations/lingettes.jpg',
-    label: 'Lingettes'
-  },
-  {
-    image: '/images/creations/charlottes.jpg',
-    label: 'Charlottes'
-  },
-]
