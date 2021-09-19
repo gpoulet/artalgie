@@ -1,8 +1,8 @@
-@import '../../styles/_colors';
-@import '../../styles/_fonts';
+@import '../../../styles/_colors';
+@import '../../../styles/_fonts';
 
 .sessions {
-  padding: 20px;
+  padding-top: 1rem;
 }
 
 .sessions > div > div.card.card-content {
