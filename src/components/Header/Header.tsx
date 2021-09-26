@@ -14,12 +14,12 @@ const Header = (): ReactElement =>
     <nav>
       <div className="nav-wrapper">
         <button data-target="slide-out"
-                className="sidenav-trigger buttonLink hide-on-large-only">
+                className="sidenav-trigger buttonLink hide-on-desktop">
           <i className="material-icons">menu</i>
         </button>
         <Link to={ROUTING_ACCUEIL} className="brand-logo"><Logo/></Link>
-        <ul id="nav-mobile" className="right hide-on-med-and-down">
-          {ROUTER.map(route => <HeaderLink route={route} key={route.routing}/>)}
+        <ul id="nav-mobile" className="right hide-on-mobile-and-tablet">
+          {ROUTER.map(route => <HeaderLink route={route} key={route.link}/>)}
         </ul>
       </div>
     </nav>

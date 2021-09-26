@@ -1,5 +1,5 @@
 import React, { memo, ReactElement } from "react";
-import Gallery from "react-photo-gallery";
+import Gallery from "../Gallery";
 
 import { LINK_CREATIONS, ETOFFE_DE_MERLIN_LINK } from '../../constants'
 import { CREATIONS } from './Creations.constants';

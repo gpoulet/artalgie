@@ -10,6 +10,16 @@ export const CABINET_PHOTOS = [
     height: 557
   },
   {
+    src: '/images/cabinet/flyer1.jpg',
+    width: 678,
+    height: 960
+  },
+  {
+    src: '/images/cabinet/flyer2.jpg',
+    width: 678,
+    height: 960
+  },
+  {
     src: '/images/cabinet/cabinet8.jpg',
     width: 4,
     height: 3

@@ -1,9 +1,9 @@
 import React, { memo, ReactElement } from "react";
 
-import { ADDRESS_CABINET, ADDRESS_LINK, LINK_CABINET } from '../../constants'
+import { ADDRESS_CABINET, ADDRESS_LINK, LINK_CABINET, ROUTING_RDV } from '../../constants'
 
 import "./_cabinet.scss";
-import Gallery from "react-photo-gallery";
+import Gallery from "../Gallery";
 import { CABINET_PHOTOS } from "./Cabinet.constants";
 
 const Cabinet = (): ReactElement =>
@@ -23,6 +23,14 @@ const Cabinet = (): ReactElement =>
           </p>
           <br/>
           <p>Elle vous accueille pour des <b>atelier en groupe</b> ou en <b>individuel</b>.</p>
+          <br/>
+          <p>
+            <a className="waves-effect waves-light btn-small header-button"
+               href={ROUTING_RDV}
+               target="_blank"
+               rel="noreferrer">
+              prendre rendez-vous en ligne
+            </a></p>
           <br/>
           <p>Il est possible de se faire <b>rembourser</b> des séances. Renseignez-vous auprès de votre mutuelle.</p>
           <br/>

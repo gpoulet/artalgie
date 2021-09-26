@@ -9,6 +9,7 @@ export const ROUTING_PRESTATIONS = "/prestations";
 export const ROUTING_RESEAU = "/reseau";
 export const ROUTING_RPS = "/rps";
 export const ROUTING_ERROR = "/erreur";
+export const ROUTING_RDV = "https://artalgie.simplybook.it/";
 
 export const LINK_ACCUEIL = "Accueil";
 export const LINK_A_PROPOS = "A propos";
@@ -20,6 +21,7 @@ export const LINK_MENTIONS_LEGALES = "Mentions légales";
 export const LINK_PRESTATIONS = "Prestations en entreprise";
 export const LINK_RESEAU = "Réseau";
 export const LINK_RPS = "Les RPS";
+export const LINK_RDV = "Prendre rendez-vous";
 
 export const ICON_ACCUEIL = "home";
 export const ICON_ART_THERAPIE = "theater_comedy";
@@ -30,12 +32,16 @@ export const ICON_PRESTATIONS = "business";
 export const ICON_A_PROPS = "info";
 export const ICON_CONTACT = "mail";
 export const ICON_RESEAU = "language";
+export const ICON_RDV = "event";
 
 export interface RouterItem {
-  routing: string,
+  routing?: string,
+  url?: string,
   link: string,
   icon: string
   exact?: boolean
+  button?: boolean
+  newLink?: boolean
 }
 
 export const ROUTER: RouterItem[] = [
@@ -47,5 +53,6 @@ export const ROUTER: RouterItem[] = [
   {routing: ROUTING_CREATIONS, link: LINK_CREATIONS, icon: ICON_CREATIONS},
   {routing: ROUTING_A_PROPOS, link: LINK_A_PROPOS, icon: ICON_A_PROPS},
   {routing: ROUTING_CONTACT, link: LINK_CONTACT, icon: ICON_CONTACT},
-  {routing: ROUTING_RESEAU, link: LINK_RESEAU, icon: ICON_RESEAU}
+  {routing: ROUTING_RESEAU, link: LINK_RESEAU, icon: ICON_RESEAU},
+  {url: ROUTING_RDV, link: LINK_RDV, icon: ICON_RDV, button: true, newLink: true}
 ]

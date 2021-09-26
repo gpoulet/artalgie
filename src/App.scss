@@ -1,9 +1,6 @@
 @import 'styles/_colors';
 @import 'styles/_fonts';
 
-$logo-weight: 500;
-$logo-color: $white;
-
 $card-title: $accent-color;
 $card-title-weight: 400;
 
@@ -18,19 +15,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+nav {
+  background-color: transparent;
+}
+
 a {
   color: $purple;
-}
-
-.brand-logo > .logo {
-  font-family: $blogger;
-  color: $logo-color;
-  font-weight: $logo-weight;
-}
-
-.brand-logo {
-  font-family: $product-sans;
-  font-size: 2.1rem;
 }
 
 .card .card-title {

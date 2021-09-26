@@ -1,0 +1,20 @@
+@import "../../styles/_colors.scss";
+
+.header-button--container {
+  margin-top: -2px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+a.waves-effect.waves-light.btn-small.header-button {
+  background-color: $menu-color-3;
+  color: $white !important;
+  border-top: 0 !important;
+  font-weight: 500;
+}
+
+a.waves-effect.waves-light.btn-small.header-button:hover,
+a.waves-effect.waves-light.btn-small.header-button:focus {
+  background-color: $menu-color-1;
+  color: $white !important;
+}
