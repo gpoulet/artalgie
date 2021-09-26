@@ -17,3 +17,11 @@ ul.sidenav > li > a.active {
   background-color: $burger-menu-link-active-background;
   font-weight: 700;
 }
+
+.sidenav li> a {
+  padding: 0 16px;
+}
+
+#slide-out > li > a > i {
+  margin: 0 16px 0 0
+}

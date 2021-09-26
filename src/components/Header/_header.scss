@@ -3,13 +3,18 @@
 
 $font-menu: $roboto;
 
-$app-bar-menu-text-desktop: $black;
-$menu-text: $black;
-$menu-text-weight: 400;
+$app-bar-color: $background-color;
+
+$desktop-link-color: $beige-light;
+$desktop-link-active-color: $white;
+$desktop-link-hover-color: $desktop-link-active-color;
+$desktop-link-text-weight: 500;
 
 $drawer-background: $white;
-$app-bar-color: $primary-color;
-$burger-icon-color: $white;
+$burger-icon-color: $desktop-link-color;
+
+$logo-color: $white;
+$logo-weight: 500;
 
 #root > div > div > nav {
   background-color: $app-bar-color;
@@ -28,32 +33,55 @@ nav .nav-wrapper > .sidenav-trigger {
   color: $burger-icon-color;
 }
 
-nav .nav-wrapper > .brand-logo {
-  color: $menu-text;
+nav .nav-wrapper > .brand-logo,
+nav > .brand-logo {
+  color: $logo-color;
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a:hover {
-  background-color: $primary-color;
-  color: $purple;
-  font-weight: 600;
+  //background-color: $primary-color;
+  color: $desktop-link-hover-color;
+  //font-weight: 600;
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a {
-  color: $app-bar-menu-text-desktop;
-  font-weight: $menu-text-weight;
+  color: $desktop-link-color;
+  font-weight: $desktop-link-text-weight;
   font-family: $font-menu;
   border-bottom: 2px solid transparent;
-  border-top: 2px solid transparent;
-  margin: -4px 0 -4px 0;
+  border-top: 4px solid transparent;
+  margin: -6px 0 -6px 0;
+}
+
+
+nav .nav-wrapper > ul#nav-mobile > li:nth-child(1n) .active {
+    background-color: $menu-color-1;
+}
+
+nav .nav-wrapper > ul#nav-mobile > li:nth-child(2n) .active {
+    background-color: $menu-color-2;
+}
+
+nav .nav-wrapper > ul#nav-mobile > li:nth-child(3n) .active {
+    background-color: $menu-color-3;
+}
+
+nav .nav-wrapper > ul#nav-mobile > li:nth-child(4n) .active {
+    background-color: $menu-color-4;
+}
+
+nav .nav-wrapper > ul#nav-mobile > li:nth-child(5n) .active {
+    background-color: $menu-color-5;
 }
 
 nav .nav-wrapper > ul#nav-mobile > li > a.active {
   // border-radius: 10px;
   // border-bottom-color: $purple;
-  background-color: $white;
+  //background-color: $white;
   font-weight: 600;
   font-size: 1rem;
-  color: $purple;
+  color: $desktop-link-active-color;
+  //border-bottom: 2px solid $desktop-link-active-color;
 }
 
 @media only screen and (min-width: 992px) {
@@ -67,6 +95,16 @@ nav .nav-wrapper > ul#nav-mobile > li > a.active {
   background-color: $primary-color;
 }
 
+.brand-logo > .logo {
+  font-family: $blogger;
+  font-weight: $logo-weight;
+}
+
+.brand-logo {
+  font-family: $product-sans;
+  font-size: 2.1rem;
+}
+
 .buttonLink {
   background-color: transparent;
   border: 1px solid transparent;
@@ -75,4 +113,16 @@ nav .nav-wrapper > ul#nav-mobile > li > a.active {
 
 .buttonLink:hover, .ButtonLink:focus {
   text-decoration: none;
+}
+
+@media (min-width: 1300px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .hide-on-mobile-and-tablet {
+    display: none;
+  }
 }

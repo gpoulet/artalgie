@@ -1,5 +1,4 @@
 import { faEnvelope, faMapMarkerAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faInstagramSquare, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 export const ARTALGIE = "Artalgie";
@@ -11,14 +10,6 @@ export const EMAIL = "contact@artalgie.fr";
 export const EMAIL_LINK = `mailto:${EMAIL}`;
 export const ADDRESS = "14 rue des lauriers - 35750 IFFENDIC";
 export const ADDRESS_LINK = "https://maps.google.com/?q=" + ADDRESS;
-export const PAGE_FACEBOOK_LINK = "https://www.facebook.com/Artalgie";
-export const PAGE_FACEBOOK = PAGE_FACEBOOK_LINK;
-export const LINKEDIN_LINK = "https://www.linkedin.com/company/artalgie";
-export const LINKEDIN = LINKEDIN_LINK;
-export const YOUTUBE_LINK = "https://www.youtube.com/channel/UCrI0K4xURujVaGJzjKg2wxg";
-export const YOUTUBE = YOUTUBE_LINK;
-export const INSTA_LINK = "https://www.instagram.com/artalgie";
-export const INSTA = INSTA_LINK;
 
 export const ADDRESS_CABINET = "14 rue des lauriers à Iffendic";
 
@@ -27,9 +18,9 @@ export const SITE_NATHALIE = "http://www.nathaliepoulet.com"
 export const ART_THERAPIE_WIKIPEDIA = "Définition de l'art-thérapie sur Wikipedia";
 export const ART_THERAPIE_WIKIPEDIA_LINK = "https://fr.wikipedia.org/wiki/Art-thérapie";
 
-export const FFAT = "FFAT (Fédération française des art-thérapeutes)";
-export const FFAT_LINK = "http://ffat-federation.org";
-export const FFAT_LOGO = "/images/arttherapie/ffat.png"
+export const SFAT = "SFAT (Syndicat Français des Arts-thérapeutes\n)";
+export const SFAT_LINK = "http://ffat-federation.org";
+export const SFAT_LOGO = "/images/arttherapie/sfat.png"
 
 export const MINISTERE_TRAVAIL = "Ministère du travail et de l'emploi";
 export const MINISTERE_TRAVAIL_LINK = "https://travail-emploi.gouv.fr/sante-au-travail/prevention-des-risques-pour-la-sante-au-travail/article/les-rps-c-est-quoi";
@@ -42,8 +33,8 @@ export const INRS_LINK = "http://www.inrs.fr/risques/psychosociaux/ce-qu-il-faut
 
 export const ARTEEP = "ARTEEP";
 export const ARTEEP_LINK = "http://www.arteep.fr/";
-export const FFAT_CODE_DEONTOLOGIE = "Code de déontologie de la FFAT";
-export const FFAT_CODE_DEONTOLOGIE_LINK = "http://ffat-federation.org/ethique";
+export const SFAT_CODE_DEONTOLOGIE = "Code de déontologie de la SFAT";
+export const SFAT_CODE_DEONTOLOGIE_LINK = "http://ffat-federation.org/ethique";
 export const SMART = "Coopérative d'entreprises SMART";
 export const SMART_LINK = "https://www.smartfr.fr";
 
@@ -129,34 +120,6 @@ export const CONTACTS: ContactItem[] = [{
   value: ADDRESS,
   target: "_blank"
 },
-  {
-    icon: faLinkedin,
-    label: 'LinkedIn',
-    link: LINKEDIN_LINK,
-    value: LINKEDIN,
-    target: "_blank"
-  },
-  {
-    icon: faInstagramSquare,
-    label: 'Instagram',
-    link: INSTA_LINK,
-    value: INSTA,
-    target: "_blank"
-  },
-  {
-    icon: faYoutube,
-    label: 'YouTube',
-    link: YOUTUBE_LINK,
-    value: YOUTUBE,
-    target: "_blank"
-  },
-  {
-    icon: faFacebook,
-    label: 'Facebook',
-    link: PAGE_FACEBOOK_LINK,
-    value: PAGE_FACEBOOK,
-    target: "_blank"
-  }
 ]
 
 export const OUTILS_THERAPEUTIQUES = [
@@ -183,9 +146,9 @@ export const ART_THERAPIE_LINKS: ArtTherapieLinkItem[] = [
     image: "/images/arttherapie/wikipedia.png"
   },
   {
-    label: FFAT,
-    url: FFAT_LINK,
-    image: FFAT_LOGO
+    label: SFAT,
+    url: SFAT_LINK,
+    image: SFAT_LOGO
   }];
 
 export interface AProposLink {
@@ -201,16 +164,10 @@ export const A_PROPOS_LINKS: AProposLink[] = [
     image: '/images/apropos/arteep.jpg'
   },
   {
-    label: FFAT_CODE_DEONTOLOGIE,
-    url: FFAT_CODE_DEONTOLOGIE_LINK,
-    image: FFAT_LOGO
+    label: SFAT_CODE_DEONTOLOGIE,
+    url: SFAT_CODE_DEONTOLOGIE_LINK,
+    image: SFAT_LOGO
   }
-  // ,
-  // {
-  //   label: SMART,
-  //   link: SMART_LINK,
-  //   image: '/images/apropos/smart.png'
-  // }
 ];
 
 export interface ReseauLinkItem {

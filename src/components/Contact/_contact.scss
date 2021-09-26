@@ -10,3 +10,12 @@ $icon-color: $yellow-post-it;
 .card.horizontal > .card-image.card-image-contact {
   max-width: 48em;
 }
+
+.contact-social {
+  justify-content: flex-start;
+
+  & > .social--item > .social--item--img {
+    height: 4rem;
+    padding: 0 1rem;
+  }
+}

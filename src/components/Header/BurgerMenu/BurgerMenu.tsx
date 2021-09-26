@@ -33,12 +33,12 @@ const BurgerMenu = (): ReactElement => {
       <ul id="slide-out" className="sidenav">
         <li className="user-view">
           <nav>
-            <div className="nav-wrapper brand-logo">
+            <div className="nav-wrapper brand-logo center">
               <Logo/>
             </div>
           </nav>
         </li>
-        {ROUTER.map(route => <BurgerMenuLink route={route} key={route.routing}/>)}
+        {ROUTER.map(route => <BurgerMenuLink route={route} key={route.link}/>)}
       </ul>
 
     </div>);

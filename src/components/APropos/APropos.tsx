@@ -7,7 +7,7 @@ import {
   SITE_NATHALIE,
   ARTALGIE,
   A_PROPOS_LINKS,
-  FFAT_CODE_DEONTOLOGIE_LINK,
+  SFAT_CODE_DEONTOLOGIE_LINK,
   ARTEEP_LINK, PHOTOGRAPHE_LINK, PHOTOGRAPHE
 } from '../../constants'
 
@@ -34,8 +34,8 @@ const APropos = (): ReactElement => {
                 <p>{ARTALGIE} est dirigée par <b>Nathalie POULET-GUILBERT</b>, <b>art-thérapeute certifiée</b>, formée
                   par <a href={ARTEEP_LINK} target="_blank" rel="noopener noreferrer">ARTEEP</a>,
                   adhérant
-                  à la <a href={FFAT_CODE_DEONTOLOGIE_LINK} target="_blank" rel="noopener noreferrer">charte de
-                    déontologie de la FFAT</a> (Fédération Française des Art-Thérapeutes).
+                  à la <a href={SFAT_CODE_DEONTOLOGIE_LINK} target="_blank" rel="noopener noreferrer">charte de
+                    déontologie du SFAT</a> (Syndicat Français des Art-Thérapeutes).
                 </p>
                 <br/>
                 <p>

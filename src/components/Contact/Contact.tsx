@@ -1,8 +1,19 @@
 import React, { memo, ReactElement } from "react";
 
 import Fields from "./Fields";
+import Social from "../Social";
 
 import "./_contact.scss"
+
+const cardContent = (
+  <>
+    <Fields/>
+    <br/>
+    <br/>
+    <span className="card-title">Réseaux sociaux</span>
+    <Social className="contact-social"/>
+  </>
+)
 
 const Contact = (): ReactElement =>
   <div className="row no-margin-bottom">
@@ -10,7 +21,7 @@ const Contact = (): ReactElement =>
       <div className="card horizontal hide-on-med-and-down">
         <div className="card-stacked">
           <div className="card-content contact-card-content">
-            <Fields/>
+            {cardContent}
           </div>
         </div>
         <div className="card-image card-image-contact">
@@ -19,7 +30,7 @@ const Contact = (): ReactElement =>
       </div>
       <div className="card hide-on-large-only hide-on-extra-large-only">
         <div className="card-content contact-card-content">
-          <Fields/>
+          {cardContent}
         </div>
       </div>
     </div>
