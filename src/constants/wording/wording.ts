@@ -71,6 +71,7 @@ export const ETOFFE_DE_MERLIN = "L'étoffe de Merlin";
 export const ETOFFE_DE_MERLIN_LINK = "https://www.facebook.com/letoffedemerlin";
 export const SACALOR = "Sacalor"
 export const SACALOR_LINK = "https://www.sacolorcreations.com/"
+export const ARTALGIE_CREATIONS = "https://artalgie-creations.com";
 
 export const RPS_LINKS = [{
   label: MINISTERE_TRAVAIL,

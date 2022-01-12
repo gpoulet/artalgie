@@ -1,7 +1,7 @@
 import React, { memo, ReactElement } from "react";
 import Gallery from "../Gallery";
 
-import { LINK_CREATIONS, ETOFFE_DE_MERLIN_LINK } from '../../constants'
+import { LINK_CREATIONS, ARTALGIE_CREATIONS } from '../../constants'
 import { CREATIONS } from './Creations.constants';
 
 import "./_creations.scss"
@@ -17,8 +17,8 @@ const Creations = (): ReactElement =>
               Artalgie se diversifie !
             </p>
             <br/>
-            <p>L'art-thérapeute, Nathalie, reste en mouvement et propose désormais ses créations à la vente à l'
-              <b><a href={ETOFFE_DE_MERLIN_LINK} target="_blank" rel="noreferrer">Etoffe de Merlin</a></b> à Iffendic.
+            <p>L'art-thérapeute, Nathalie, reste en mouvement et propose désormais ses créations à la vente en ligne&nbsp;:&nbsp;
+              <b><a href={ARTALGIE_CREATIONS} target="_blank" rel="noreferrer">{ARTALGIE_CREATIONS}</a></b>
             </p>
             <br/>
             <p>Elle propose diverses confections d'accessoires textiles : bonnets, lingettes démaquillantes, charlottes
