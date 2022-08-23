@@ -1,5 +1,10 @@
 export const CABINET_PHOTOS = [
   {
+    src: '/images/cabinet/portes-ouvertes-2022.jpg',
+    width: 620,
+    height: 874
+  },
+  {
     src: '/images/cabinet/cabinet.jpg',
     width: 4,
     height: 3
