@@ -1,7 +1,9 @@
 import React, { memo, ReactElement } from "react";
 
-import Fields from "./Fields";
 import Social from "../Social";
+
+import Avis from "./Avis";
+import Fields from "./Fields";
 
 import "./_contact.scss"
 
@@ -12,6 +14,10 @@ const cardContent = (
     <br/>
     <span className="card-title">Réseaux sociaux</span>
     <Social className="contact-social"/>
+    <br/>
+    <br/>
+    <span className="card-title">Donnez votre avis sur Artalgie</span>
+    <Avis className="contact-social"/>
   </>
 )
 

@@ -15,6 +15,7 @@ import {
   CONTACTS, SLOGAN
 } from '../../constants'
 import Social from "../Social";
+import AvisFooter from "../Contact/AvisFooter";
 
 function Footer() {
   return (
@@ -30,6 +31,7 @@ function Footer() {
           <div className="footer-title">Contact</div>
           <div className="footer-contact">
             {CONTACTS.map(contact => <Field contact={contact} key={contact.label}/>)}
+            <AvisFooter />
           </div>
         </div>
         <div className="hide-on-mobile-and-tablet footer-links">

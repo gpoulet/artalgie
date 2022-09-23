@@ -1,0 +1,35 @@
+.avis--container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avis--item {
+  display: flex;
+  align-items: center
+}
+
+.avis--item--img {
+  height: 2.2rem;
+  margin-right: 0.5rem;
+}
+
+.avis--star--img {
+  height: 1.2rem;
+}
+
+.avis--donnez-votre-avis {
+  margin-left: 0.5rem;
+}
+
+.footer {
+  & > .avis--item--img {
+    height: 1.7rem;
+    margin-right: 0.5rem;
+  }
+
+  & > .avis--star--img {
+    height: 0.8rem;
+    filter: brightness(108%);
+  }
+}
